@@ -16,5 +16,12 @@ namespace Arkanoid
         {
             InitializeComponent();
         }
+
+        private void btmPlay_Click(object sender, EventArgs e)
+        {
+            frmGame window = new frmGame();
+            window.Show();
+            this.Hide();
+        }
     }
 }

@@ -6,3 +6,5 @@ C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkan
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.csproj.GenerateResource.cache
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.exe
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.pdb
+C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.Form1.resources
+C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmGame.resources
