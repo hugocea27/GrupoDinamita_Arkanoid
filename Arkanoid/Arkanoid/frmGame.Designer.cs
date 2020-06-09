@@ -33,7 +33,7 @@ namespace Arkanoid
         {
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblScore = new System.Windows.Forms.Label();
             this.redblock = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -137,6 +137,8 @@ namespace Arkanoid
             this.picLeftWall = new System.Windows.Forms.PictureBox();
             this.picRightWall = new System.Windows.Forms.PictureBox();
             this.pictureBox100 = new System.Windows.Forms.PictureBox();
+            this.picDownWall = new System.Windows.Forms.PictureBox();
+            this.lblLifes = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.redblock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox2)).BeginInit();
@@ -239,6 +241,7 @@ namespace Arkanoid
             ((System.ComponentModel.ISupportInitialize) (this.picLeftWall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.picRightWall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox100)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.picDownWall)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -251,13 +254,15 @@ namespace Arkanoid
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "topwall";
             // 
-            // label1
+            // lblScore
             // 
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lblScore.BackColor = System.Drawing.Color.DimGray;
+            this.lblScore.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lblScore.Location = new System.Drawing.Point(12, 3);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(225, 28);
+            this.lblScore.TabIndex = 1;
             // 
             // redblock
             // 
@@ -1300,7 +1305,7 @@ namespace Arkanoid
             this.ball.BackgroundImage = global::Arkanoid.Properties.Resources.pngfuel;
             this.ball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ball.Image = global::Arkanoid.Properties.Resources.Ball;
-            this.ball.Location = new System.Drawing.Point(474, 588);
+            this.ball.Location = new System.Drawing.Point(468, 408);
             this.ball.Name = "ball";
             this.ball.Size = new System.Drawing.Size(35, 35);
             this.ball.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1311,7 +1316,7 @@ namespace Arkanoid
             // 
             this.player.BackColor = System.Drawing.Color.Green;
             this.player.Enabled = false;
-            this.player.Location = new System.Drawing.Point(416, 653);
+            this.player.Location = new System.Drawing.Point(409, 667);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(167, 23);
             this.player.TabIndex = 101;
@@ -1354,12 +1359,35 @@ namespace Arkanoid
             this.pictureBox100.TabStop = false;
             this.pictureBox100.Tag = "redblock";
             // 
+            // picDownWall
+            // 
+            this.picDownWall.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.picDownWall.Location = new System.Drawing.Point(0, 730);
+            this.picDownWall.Name = "picDownWall";
+            this.picDownWall.Size = new System.Drawing.Size(973, 12);
+            this.picDownWall.TabIndex = 105;
+            this.picDownWall.TabStop = false;
+            this.picDownWall.Tag = "downWall";
+            // 
+            // lblLifes
+            // 
+            this.lblLifes.BackColor = System.Drawing.Color.DimGray;
+            this.lblLifes.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lblLifes.Location = new System.Drawing.Point(800, 3);
+            this.lblLifes.Name = "lblLifes";
+            this.lblLifes.Size = new System.Drawing.Size(173, 28);
+            this.lblLifes.TabIndex = 106;
+            // 
             // frmGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Arkanoid.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(973, 738);
+            this.Controls.Add(this.lblLifes);
+            this.Controls.Add(this.picDownWall);
             this.Controls.Add(this.pictureBox100);
             this.Controls.Add(this.picRightWall);
             this.Controls.Add(this.picLeftWall);
@@ -1462,9 +1490,12 @@ namespace Arkanoid
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.redblock);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblScore);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGame";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyUp);
@@ -1570,13 +1601,13 @@ namespace Arkanoid
             ((System.ComponentModel.ISupportInitialize) (this.picLeftWall)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.picRightWall)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox100)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.picDownWall)).EndInit();
             this.ResumeLayout(false);
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -1680,5 +1711,8 @@ namespace Arkanoid
         private System.Windows.Forms.PictureBox pictureBox100;
         private System.Windows.Forms.PictureBox picLeftWall;
         private System.Windows.Forms.PictureBox picRightWall;
+        private System.Windows.Forms.PictureBox picDownWall;
+        private System.Windows.Forms.Label lblLifes;
+        private System.Windows.Forms.Label lblScore;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Media;
 using System.Windows.Forms;
 
 namespace Arkanoid
@@ -7,13 +8,12 @@ namespace Arkanoid
     public partial class frmGame : Form
     {
         bool goToLeft, goToRight;
-        int speed = 15, ballX = 10, ballY = 10, score = 0, life=0;
-        
+        int speed = 15, ballX = 10, ballY = 10, score = 0, life=3;
+
         public frmGame()
         {
             InitializeComponent();
         }
-
         //evento de apretar tecla
         private void keyDown(object sender, KeyEventArgs e)
         {
@@ -37,6 +37,10 @@ namespace Arkanoid
             //moviemiento bola
             ball.Left += ballX;
             ball.Top += ballY;
+            
+            //Vidas y puntaje
+            lblScore.Text = "PUNTAJE: " + score;
+            lblLifes.Text = "VIDA: " + life;
             
             //Colisiones del jugador
             if (player.Bounds.IntersectsWith(ball.Bounds)) { ballY = -ballY; } //con la bola 
@@ -63,6 +67,7 @@ namespace Arkanoid
                     {
                         this.Controls.Remove(x);
                         ballY = -ballY;
+                        score++;
                     }
                 }
                 
@@ -87,7 +92,40 @@ namespace Arkanoid
                         x.BackColor = Color.Pink;
                     }
                 }
+                
+                //Gameover
+                if (x is PictureBox && x.Tag == "downWall")
+                {
+                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        if (life > 0)
+                        {
+                            lostLife();
+                        }
+                        else
+                        {
+                            gameover();
+                        }
+                    }
+                }
             }
+        }
+        
+        private void gameover()
+        {
+            timer1.Stop();
+            MessageBox.Show("Fin del juego");
+        }
+
+        private void lostLife()
+        {
+            goToLeft = false;
+            goToRight = false;
+            timer1.Stop();
+            MessageBox.Show("Perdiste");
+            life--;
+            ball.Location = new Point(player.Location.X + 30, player.Location.Y - 50);
+            timer1.Start();
         }
     }
 }
