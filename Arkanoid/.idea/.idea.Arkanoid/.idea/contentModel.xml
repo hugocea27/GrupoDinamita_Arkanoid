@@ -25,6 +25,7 @@
         </e>
         <e p="Resources" t="Include">
           <e p="background.png" t="Include" />
+          <e p="Ball.png" t="Include" />
           <e p="blueblock.png" t="Include" />
           <e p="btmPlay.png" t="Include" />
           <e p="btmRanking.png" t="Include" />

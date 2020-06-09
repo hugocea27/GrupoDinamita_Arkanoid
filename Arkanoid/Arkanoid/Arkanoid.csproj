@@ -90,6 +90,7 @@
     </ItemGroup>
     <ItemGroup>
       <Content Include="Resources\background.png" />
+      <Content Include="Resources\Ball.png" />
       <Content Include="Resources\blueblock.png" />
       <Content Include="Resources\btmPlay.png" />
       <Content Include="Resources\btmRanking.png" />
