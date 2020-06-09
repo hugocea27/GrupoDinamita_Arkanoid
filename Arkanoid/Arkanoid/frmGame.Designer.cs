@@ -31,6 +31,7 @@ namespace Arkanoid
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.redblock = new System.Windows.Forms.PictureBox();
@@ -130,8 +131,9 @@ namespace Arkanoid
             this.pictureBox95 = new System.Windows.Forms.PictureBox();
             this.pictureBox96 = new System.Windows.Forms.PictureBox();
             this.pictureBox97 = new System.Windows.Forms.PictureBox();
-            this.player = new System.Windows.Forms.PictureBox();
             this.ball = new System.Windows.Forms.PictureBox();
+            this.player = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.redblock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox2)).BeginInit();
@@ -230,7 +232,6 @@ namespace Arkanoid
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox95)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox96)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox97)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize) (this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.ball)).BeginInit();
             this.SuspendLayout();
             // 
@@ -779,7 +780,7 @@ namespace Arkanoid
             // pictureBox49
             // 
             this.pictureBox49.BackColor = System.Drawing.Color.White;
-            this.pictureBox49.Location = new System.Drawing.Point(361, 309);
+            this.pictureBox49.Location = new System.Drawing.Point(360, 309);
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.Size = new System.Drawing.Size(79, 32);
             this.pictureBox49.TabIndex = 50;
@@ -889,7 +890,7 @@ namespace Arkanoid
             // pictureBox60
             // 
             this.pictureBox60.BackColor = System.Drawing.Color.White;
-            this.pictureBox60.Location = new System.Drawing.Point(361, 347);
+            this.pictureBox60.Location = new System.Drawing.Point(360, 347);
             this.pictureBox60.Name = "pictureBox60";
             this.pictureBox60.Size = new System.Drawing.Size(79, 32);
             this.pictureBox60.TabIndex = 61;
@@ -999,7 +1000,7 @@ namespace Arkanoid
             // pictureBox71
             // 
             this.pictureBox71.BackColor = System.Drawing.Color.White;
-            this.pictureBox71.Location = new System.Drawing.Point(361, 271);
+            this.pictureBox71.Location = new System.Drawing.Point(360, 271);
             this.pictureBox71.Name = "pictureBox71";
             this.pictureBox71.Size = new System.Drawing.Size(79, 32);
             this.pictureBox71.TabIndex = 72;
@@ -1094,7 +1095,7 @@ namespace Arkanoid
             // 
             this.pictureBox80.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
                 ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox80.Location = new System.Drawing.Point(361, 157);
+            this.pictureBox80.Location = new System.Drawing.Point(360, 157);
             this.pictureBox80.Name = "pictureBox80";
             this.pictureBox80.Size = new System.Drawing.Size(79, 32);
             this.pictureBox80.TabIndex = 81;
@@ -1215,7 +1216,7 @@ namespace Arkanoid
             // 
             this.pictureBox91.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox91.Location = new System.Drawing.Point(361, 119);
+            this.pictureBox91.Location = new System.Drawing.Point(360, 119);
             this.pictureBox91.Name = "pictureBox91";
             this.pictureBox91.Size = new System.Drawing.Size(79, 32);
             this.pictureBox91.TabIndex = 92;
@@ -1288,28 +1289,34 @@ namespace Arkanoid
             this.pictureBox97.TabStop = false;
             this.pictureBox97.Tag = "redblock";
             // 
-            // player
-            // 
-            this.player.BackColor = System.Drawing.Color.Green;
-            this.player.Image = global::Arkanoid.Properties.Resources.player;
-            this.player.Location = new System.Drawing.Point(418, 705);
-            this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(140, 21);
-            this.player.TabIndex = 99;
-            this.player.TabStop = false;
-            // 
             // ball
             // 
             this.ball.BackColor = System.Drawing.Color.Transparent;
             this.ball.BackgroundImage = global::Arkanoid.Properties.Resources.pngfuel;
             this.ball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ball.Image = global::Arkanoid.Properties.Resources.pngfuel;
-            this.ball.Location = new System.Drawing.Point(474, 589);
+            this.ball.Location = new System.Drawing.Point(474, 588);
             this.ball.Name = "ball";
             this.ball.Size = new System.Drawing.Size(35, 35);
             this.ball.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ball.TabIndex = 100;
             this.ball.TabStop = false;
+            // 
+            // player
+            // 
+            this.player.Enabled = false;
+            this.player.Location = new System.Drawing.Point(417, 653);
+            this.player.Name = "player";
+            this.player.Size = new System.Drawing.Size(167, 23);
+            this.player.TabIndex = 101;
+            this.player.UseVisualStyleBackColor = true;
+           //this.player.Click += new System.EventHandler(this.player_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 20;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmGame
             // 
@@ -1317,8 +1324,8 @@ namespace Arkanoid
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Arkanoid.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(973, 738);
-            this.Controls.Add(this.ball);
             this.Controls.Add(this.player);
+            this.Controls.Add(this.ball);
             this.Controls.Add(this.pictureBox97);
             this.Controls.Add(this.pictureBox96);
             this.Controls.Add(this.pictureBox95);
@@ -1420,6 +1427,8 @@ namespace Arkanoid
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmGame";
             this.Text = "frmGame";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyUp);
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.redblock)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox2)).EndInit();
@@ -1518,7 +1527,6 @@ namespace Arkanoid
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox95)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox96)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox97)).EndInit();
-            ((System.ComponentModel.ISupportInitialize) (this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.ball)).EndInit();
             this.ResumeLayout(false);
         }
@@ -1624,7 +1632,8 @@ namespace Arkanoid
         private System.Windows.Forms.PictureBox pictureBox80;
         private System.Windows.Forms.PictureBox pictureBox79;
         private System.Windows.Forms.PictureBox pictureBox78;
-        private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.PictureBox ball;
+        private System.Windows.Forms.Button player;
+        private System.Windows.Forms.Timer timer1;
     }
 }
