@@ -246,8 +246,8 @@ namespace Arkanoid
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -3);
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(973, 40);
             this.pictureBox1.TabIndex = 0;
@@ -259,7 +259,7 @@ namespace Arkanoid
             this.lblScore.BackColor = System.Drawing.Color.DimGray;
             this.lblScore.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.lblScore.Location = new System.Drawing.Point(12, 3);
+            this.lblScore.Location = new System.Drawing.Point(21, 12);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(225, 28);
             this.lblScore.TabIndex = 1;
@@ -1305,7 +1305,7 @@ namespace Arkanoid
             this.ball.BackgroundImage = global::Arkanoid.Properties.Resources.pngfuel;
             this.ball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ball.Image = global::Arkanoid.Properties.Resources.Ball;
-            this.ball.Location = new System.Drawing.Point(468, 408);
+            this.ball.Location = new System.Drawing.Point(472, 573);
             this.ball.Name = "ball";
             this.ball.Size = new System.Drawing.Size(35, 35);
             this.ball.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1330,20 +1330,20 @@ namespace Arkanoid
             // 
             // picLeftWall
             // 
-            this.picLeftWall.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.picLeftWall.Location = new System.Drawing.Point(0, 35);
+            this.picLeftWall.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.picLeftWall.Location = new System.Drawing.Point(0, 43);
             this.picLeftWall.Name = "picLeftWall";
-            this.picLeftWall.Size = new System.Drawing.Size(15, 706);
+            this.picLeftWall.Size = new System.Drawing.Size(15, 698);
             this.picLeftWall.TabIndex = 102;
             this.picLeftWall.TabStop = false;
             this.picLeftWall.Tag = "wall";
             // 
             // picRightWall
             // 
-            this.picRightWall.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.picRightWall.Location = new System.Drawing.Point(958, 35);
+            this.picRightWall.BackColor = System.Drawing.Color.Black;
+            this.picRightWall.Location = new System.Drawing.Point(958, 43);
             this.picRightWall.Name = "picRightWall";
-            this.picRightWall.Size = new System.Drawing.Size(15, 706);
+            this.picRightWall.Size = new System.Drawing.Size(15, 698);
             this.picRightWall.TabIndex = 103;
             this.picRightWall.TabStop = false;
             this.picRightWall.Tag = "wall";
@@ -1352,7 +1352,7 @@ namespace Arkanoid
             // 
             this.pictureBox100.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox100.Location = new System.Drawing.Point(351, 408);
+            this.pictureBox100.Location = new System.Drawing.Point(871, 347);
             this.pictureBox100.Name = "pictureBox100";
             this.pictureBox100.Size = new System.Drawing.Size(79, 32);
             this.pictureBox100.TabIndex = 104;
@@ -1374,7 +1374,7 @@ namespace Arkanoid
             this.lblLifes.BackColor = System.Drawing.Color.DimGray;
             this.lblLifes.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.lblLifes.Location = new System.Drawing.Point(800, 3);
+            this.lblLifes.Location = new System.Drawing.Point(777, 3);
             this.lblLifes.Name = "lblLifes";
             this.lblLifes.Size = new System.Drawing.Size(173, 28);
             this.lblLifes.TabIndex = 106;
