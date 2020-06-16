@@ -136,7 +136,6 @@ namespace Arkanoid
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.picLeftWall = new System.Windows.Forms.PictureBox();
             this.picRightWall = new System.Windows.Forms.PictureBox();
-            this.pictureBox100 = new System.Windows.Forms.PictureBox();
             this.picDownWall = new System.Windows.Forms.PictureBox();
             this.lblLifes = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
@@ -240,35 +239,36 @@ namespace Arkanoid
             ((System.ComponentModel.ISupportInitialize) (this.ball)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.picLeftWall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.picRightWall)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize) (this.pictureBox100)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.picDownWall)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(973, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(973, 63);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "topwall";
             // 
             // lblScore
             // 
-            this.lblScore.BackColor = System.Drawing.Color.DimGray;
+            this.lblScore.BackColor = System.Drawing.Color.Black;
             this.lblScore.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.lblScore.Location = new System.Drawing.Point(21, 12);
+            this.lblScore.ForeColor = System.Drawing.Color.White;
+            this.lblScore.Location = new System.Drawing.Point(49, 3);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(225, 28);
+            this.lblScore.Size = new System.Drawing.Size(220, 33);
             this.lblScore.TabIndex = 1;
+            this.lblScore.Tag = "hud";
             // 
             // redblock
             // 
             this.redblock.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
                 ((int) (((byte) (0)))));
-            this.redblock.Location = new System.Drawing.Point(21, 43);
+            this.redblock.Location = new System.Drawing.Point(22, 80);
             this.redblock.Name = "redblock";
             this.redblock.Size = new System.Drawing.Size(79, 32);
             this.redblock.TabIndex = 2;
@@ -279,7 +279,7 @@ namespace Arkanoid
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
                 ((int) (((byte) (0)))));
-            this.pictureBox2.Location = new System.Drawing.Point(106, 43);
+            this.pictureBox2.Location = new System.Drawing.Point(107, 80);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(79, 32);
             this.pictureBox2.TabIndex = 3;
@@ -290,7 +290,7 @@ namespace Arkanoid
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
                 ((int) (((byte) (0)))));
-            this.pictureBox3.Location = new System.Drawing.Point(191, 43);
+            this.pictureBox3.Location = new System.Drawing.Point(192, 80);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(79, 32);
             this.pictureBox3.TabIndex = 4;
@@ -301,7 +301,7 @@ namespace Arkanoid
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
                 ((int) (((byte) (0)))));
-            this.pictureBox4.Location = new System.Drawing.Point(276, 43);
+            this.pictureBox4.Location = new System.Drawing.Point(276, 80);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(79, 32);
             this.pictureBox4.TabIndex = 5;
@@ -312,7 +312,7 @@ namespace Arkanoid
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
                 ((int) (((byte) (0)))));
-            this.pictureBox5.Location = new System.Drawing.Point(360, 43);
+            this.pictureBox5.Location = new System.Drawing.Point(360, 80);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(79, 32);
             this.pictureBox5.TabIndex = 6;
@@ -323,9 +323,9 @@ namespace Arkanoid
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
                 ((int) (((byte) (0)))));
-            this.pictureBox6.Location = new System.Drawing.Point(446, 43);
+            this.pictureBox6.Location = new System.Drawing.Point(444, 80);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(79, 32);
+            this.pictureBox6.Size = new System.Drawing.Size(80, 32);
             this.pictureBox6.TabIndex = 7;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Tag = "redblock";
@@ -334,7 +334,7 @@ namespace Arkanoid
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
                 ((int) (((byte) (0)))));
-            this.pictureBox7.Location = new System.Drawing.Point(531, 43);
+            this.pictureBox7.Location = new System.Drawing.Point(530, 80);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(79, 32);
             this.pictureBox7.TabIndex = 8;
@@ -345,7 +345,7 @@ namespace Arkanoid
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
                 ((int) (((byte) (0)))));
-            this.pictureBox8.Location = new System.Drawing.Point(616, 43);
+            this.pictureBox8.Location = new System.Drawing.Point(615, 80);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(79, 32);
             this.pictureBox8.TabIndex = 9;
@@ -356,7 +356,7 @@ namespace Arkanoid
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
                 ((int) (((byte) (0)))));
-            this.pictureBox9.Location = new System.Drawing.Point(701, 43);
+            this.pictureBox9.Location = new System.Drawing.Point(700, 80);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(79, 32);
             this.pictureBox9.TabIndex = 10;
@@ -367,7 +367,7 @@ namespace Arkanoid
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox10.Location = new System.Drawing.Point(786, 43);
+            this.pictureBox10.Location = new System.Drawing.Point(785, 80);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(79, 32);
             this.pictureBox10.TabIndex = 11;
@@ -378,7 +378,7 @@ namespace Arkanoid
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox11.Location = new System.Drawing.Point(871, 43);
+            this.pictureBox11.Location = new System.Drawing.Point(869, 80);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(79, 32);
             this.pictureBox11.TabIndex = 12;
@@ -389,7 +389,7 @@ namespace Arkanoid
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox12.Location = new System.Drawing.Point(21, 81);
+            this.pictureBox12.Location = new System.Drawing.Point(22, 118);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(79, 32);
             this.pictureBox12.TabIndex = 13;
@@ -400,7 +400,7 @@ namespace Arkanoid
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox13.Location = new System.Drawing.Point(106, 81);
+            this.pictureBox13.Location = new System.Drawing.Point(107, 118);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(79, 32);
             this.pictureBox13.TabIndex = 14;
@@ -411,7 +411,7 @@ namespace Arkanoid
             // 
             this.pictureBox14.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox14.Location = new System.Drawing.Point(191, 81);
+            this.pictureBox14.Location = new System.Drawing.Point(192, 118);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(79, 32);
             this.pictureBox14.TabIndex = 15;
@@ -422,7 +422,7 @@ namespace Arkanoid
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox15.Location = new System.Drawing.Point(276, 81);
+            this.pictureBox15.Location = new System.Drawing.Point(276, 118);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(79, 32);
             this.pictureBox15.TabIndex = 16;
@@ -433,7 +433,7 @@ namespace Arkanoid
             // 
             this.pictureBox16.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox16.Location = new System.Drawing.Point(360, 81);
+            this.pictureBox16.Location = new System.Drawing.Point(360, 118);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(79, 32);
             this.pictureBox16.TabIndex = 17;
@@ -444,9 +444,9 @@ namespace Arkanoid
             // 
             this.pictureBox17.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox17.Location = new System.Drawing.Point(446, 81);
+            this.pictureBox17.Location = new System.Drawing.Point(444, 118);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(79, 32);
+            this.pictureBox17.Size = new System.Drawing.Size(80, 32);
             this.pictureBox17.TabIndex = 18;
             this.pictureBox17.TabStop = false;
             this.pictureBox17.Tag = "redblock";
@@ -455,7 +455,7 @@ namespace Arkanoid
             // 
             this.pictureBox18.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox18.Location = new System.Drawing.Point(531, 81);
+            this.pictureBox18.Location = new System.Drawing.Point(530, 118);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(79, 32);
             this.pictureBox18.TabIndex = 19;
@@ -466,7 +466,7 @@ namespace Arkanoid
             // 
             this.pictureBox19.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox19.Location = new System.Drawing.Point(616, 81);
+            this.pictureBox19.Location = new System.Drawing.Point(615, 118);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(79, 32);
             this.pictureBox19.TabIndex = 20;
@@ -477,7 +477,7 @@ namespace Arkanoid
             // 
             this.pictureBox20.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox20.Location = new System.Drawing.Point(701, 81);
+            this.pictureBox20.Location = new System.Drawing.Point(700, 118);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(79, 32);
             this.pictureBox20.TabIndex = 21;
@@ -488,7 +488,7 @@ namespace Arkanoid
             // 
             this.pictureBox21.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox21.Location = new System.Drawing.Point(786, 81);
+            this.pictureBox21.Location = new System.Drawing.Point(785, 118);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(79, 32);
             this.pictureBox21.TabIndex = 22;
@@ -499,7 +499,7 @@ namespace Arkanoid
             // 
             this.pictureBox22.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox22.Location = new System.Drawing.Point(871, 81);
+            this.pictureBox22.Location = new System.Drawing.Point(869, 118);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(79, 32);
             this.pictureBox22.TabIndex = 23;
@@ -509,8 +509,8 @@ namespace Arkanoid
             // pictureBox23
             // 
             this.pictureBox23.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox23.Location = new System.Drawing.Point(21, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox23.Location = new System.Drawing.Point(22, 270);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(79, 32);
             this.pictureBox23.TabIndex = 24;
@@ -520,8 +520,8 @@ namespace Arkanoid
             // pictureBox24
             // 
             this.pictureBox24.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox24.Location = new System.Drawing.Point(106, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox24.Location = new System.Drawing.Point(107, 232);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(79, 32);
             this.pictureBox24.TabIndex = 25;
@@ -531,8 +531,8 @@ namespace Arkanoid
             // pictureBox25
             // 
             this.pictureBox25.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox25.Location = new System.Drawing.Point(191, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox25.Location = new System.Drawing.Point(192, 232);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(79, 32);
             this.pictureBox25.TabIndex = 26;
@@ -542,8 +542,8 @@ namespace Arkanoid
             // pictureBox26
             // 
             this.pictureBox26.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox26.Location = new System.Drawing.Point(276, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox26.Location = new System.Drawing.Point(276, 232);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(79, 32);
             this.pictureBox26.TabIndex = 27;
@@ -553,8 +553,8 @@ namespace Arkanoid
             // pictureBox27
             // 
             this.pictureBox27.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox27.Location = new System.Drawing.Point(360, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox27.Location = new System.Drawing.Point(360, 232);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(79, 32);
             this.pictureBox27.TabIndex = 28;
@@ -564,10 +564,10 @@ namespace Arkanoid
             // pictureBox28
             // 
             this.pictureBox28.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox28.Location = new System.Drawing.Point(446, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox28.Location = new System.Drawing.Point(444, 232);
             this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(79, 32);
+            this.pictureBox28.Size = new System.Drawing.Size(80, 32);
             this.pictureBox28.TabIndex = 29;
             this.pictureBox28.TabStop = false;
             this.pictureBox28.Tag = "pinkblock";
@@ -575,8 +575,8 @@ namespace Arkanoid
             // pictureBox29
             // 
             this.pictureBox29.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox29.Location = new System.Drawing.Point(531, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox29.Location = new System.Drawing.Point(530, 232);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(79, 32);
             this.pictureBox29.TabIndex = 30;
@@ -586,8 +586,8 @@ namespace Arkanoid
             // pictureBox30
             // 
             this.pictureBox30.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox30.Location = new System.Drawing.Point(616, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox30.Location = new System.Drawing.Point(615, 232);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(79, 32);
             this.pictureBox30.TabIndex = 31;
@@ -597,8 +597,8 @@ namespace Arkanoid
             // pictureBox31
             // 
             this.pictureBox31.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox31.Location = new System.Drawing.Point(701, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox31.Location = new System.Drawing.Point(700, 232);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(79, 32);
             this.pictureBox31.TabIndex = 32;
@@ -608,8 +608,8 @@ namespace Arkanoid
             // pictureBox32
             // 
             this.pictureBox32.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox32.Location = new System.Drawing.Point(786, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox32.Location = new System.Drawing.Point(785, 232);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(79, 32);
             this.pictureBox32.TabIndex = 33;
@@ -619,8 +619,8 @@ namespace Arkanoid
             // pictureBox33
             // 
             this.pictureBox33.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox33.Location = new System.Drawing.Point(871, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox33.Location = new System.Drawing.Point(869, 232);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(79, 32);
             this.pictureBox33.TabIndex = 34;
@@ -630,8 +630,8 @@ namespace Arkanoid
             // pictureBox34
             // 
             this.pictureBox34.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox34.Location = new System.Drawing.Point(21, 195);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox34.Location = new System.Drawing.Point(22, 232);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(79, 32);
             this.pictureBox34.TabIndex = 35;
@@ -641,8 +641,8 @@ namespace Arkanoid
             // pictureBox35
             // 
             this.pictureBox35.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox35.Location = new System.Drawing.Point(106, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox35.Location = new System.Drawing.Point(107, 270);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(79, 32);
             this.pictureBox35.TabIndex = 36;
@@ -652,8 +652,8 @@ namespace Arkanoid
             // pictureBox36
             // 
             this.pictureBox36.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox36.Location = new System.Drawing.Point(191, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox36.Location = new System.Drawing.Point(192, 270);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(79, 32);
             this.pictureBox36.TabIndex = 37;
@@ -663,8 +663,8 @@ namespace Arkanoid
             // pictureBox37
             // 
             this.pictureBox37.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox37.Location = new System.Drawing.Point(276, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox37.Location = new System.Drawing.Point(276, 270);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(79, 32);
             this.pictureBox37.TabIndex = 38;
@@ -674,8 +674,8 @@ namespace Arkanoid
             // pictureBox38
             // 
             this.pictureBox38.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox38.Location = new System.Drawing.Point(360, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox38.Location = new System.Drawing.Point(360, 270);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(79, 32);
             this.pictureBox38.TabIndex = 39;
@@ -685,10 +685,10 @@ namespace Arkanoid
             // pictureBox39
             // 
             this.pictureBox39.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox39.Location = new System.Drawing.Point(446, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox39.Location = new System.Drawing.Point(444, 270);
             this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(79, 32);
+            this.pictureBox39.Size = new System.Drawing.Size(80, 32);
             this.pictureBox39.TabIndex = 40;
             this.pictureBox39.TabStop = false;
             this.pictureBox39.Tag = "pinkblock";
@@ -696,8 +696,8 @@ namespace Arkanoid
             // pictureBox40
             // 
             this.pictureBox40.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox40.Location = new System.Drawing.Point(531, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox40.Location = new System.Drawing.Point(530, 270);
             this.pictureBox40.Name = "pictureBox40";
             this.pictureBox40.Size = new System.Drawing.Size(79, 32);
             this.pictureBox40.TabIndex = 41;
@@ -707,8 +707,8 @@ namespace Arkanoid
             // pictureBox41
             // 
             this.pictureBox41.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox41.Location = new System.Drawing.Point(616, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox41.Location = new System.Drawing.Point(615, 270);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(79, 32);
             this.pictureBox41.TabIndex = 42;
@@ -718,8 +718,8 @@ namespace Arkanoid
             // pictureBox42
             // 
             this.pictureBox42.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox42.Location = new System.Drawing.Point(701, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox42.Location = new System.Drawing.Point(700, 270);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(79, 32);
             this.pictureBox42.TabIndex = 43;
@@ -729,8 +729,8 @@ namespace Arkanoid
             // pictureBox43
             // 
             this.pictureBox43.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox43.Location = new System.Drawing.Point(786, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox43.Location = new System.Drawing.Point(785, 270);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(79, 32);
             this.pictureBox43.TabIndex = 44;
@@ -740,8 +740,8 @@ namespace Arkanoid
             // pictureBox44
             // 
             this.pictureBox44.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox44.Location = new System.Drawing.Point(871, 233);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox44.Location = new System.Drawing.Point(869, 270);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(79, 32);
             this.pictureBox44.TabIndex = 45;
@@ -751,7 +751,7 @@ namespace Arkanoid
             // pictureBox45
             // 
             this.pictureBox45.BackColor = System.Drawing.Color.White;
-            this.pictureBox45.Location = new System.Drawing.Point(21, 309);
+            this.pictureBox45.Location = new System.Drawing.Point(22, 346);
             this.pictureBox45.Name = "pictureBox45";
             this.pictureBox45.Size = new System.Drawing.Size(79, 32);
             this.pictureBox45.TabIndex = 46;
@@ -761,7 +761,7 @@ namespace Arkanoid
             // pictureBox46
             // 
             this.pictureBox46.BackColor = System.Drawing.Color.White;
-            this.pictureBox46.Location = new System.Drawing.Point(106, 309);
+            this.pictureBox46.Location = new System.Drawing.Point(107, 346);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(79, 32);
             this.pictureBox46.TabIndex = 47;
@@ -771,7 +771,7 @@ namespace Arkanoid
             // pictureBox47
             // 
             this.pictureBox47.BackColor = System.Drawing.Color.White;
-            this.pictureBox47.Location = new System.Drawing.Point(191, 309);
+            this.pictureBox47.Location = new System.Drawing.Point(192, 346);
             this.pictureBox47.Name = "pictureBox47";
             this.pictureBox47.Size = new System.Drawing.Size(79, 32);
             this.pictureBox47.TabIndex = 48;
@@ -781,7 +781,7 @@ namespace Arkanoid
             // pictureBox48
             // 
             this.pictureBox48.BackColor = System.Drawing.Color.White;
-            this.pictureBox48.Location = new System.Drawing.Point(276, 309);
+            this.pictureBox48.Location = new System.Drawing.Point(276, 346);
             this.pictureBox48.Name = "pictureBox48";
             this.pictureBox48.Size = new System.Drawing.Size(79, 32);
             this.pictureBox48.TabIndex = 49;
@@ -791,7 +791,7 @@ namespace Arkanoid
             // pictureBox49
             // 
             this.pictureBox49.BackColor = System.Drawing.Color.White;
-            this.pictureBox49.Location = new System.Drawing.Point(360, 309);
+            this.pictureBox49.Location = new System.Drawing.Point(360, 346);
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.Size = new System.Drawing.Size(79, 32);
             this.pictureBox49.TabIndex = 50;
@@ -801,9 +801,9 @@ namespace Arkanoid
             // pictureBox50
             // 
             this.pictureBox50.BackColor = System.Drawing.Color.White;
-            this.pictureBox50.Location = new System.Drawing.Point(446, 309);
+            this.pictureBox50.Location = new System.Drawing.Point(444, 346);
             this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(79, 32);
+            this.pictureBox50.Size = new System.Drawing.Size(80, 32);
             this.pictureBox50.TabIndex = 51;
             this.pictureBox50.TabStop = false;
             this.pictureBox50.Tag = "whiteblock";
@@ -811,7 +811,7 @@ namespace Arkanoid
             // pictureBox51
             // 
             this.pictureBox51.BackColor = System.Drawing.Color.White;
-            this.pictureBox51.Location = new System.Drawing.Point(531, 309);
+            this.pictureBox51.Location = new System.Drawing.Point(530, 346);
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.Size = new System.Drawing.Size(79, 32);
             this.pictureBox51.TabIndex = 52;
@@ -821,7 +821,7 @@ namespace Arkanoid
             // pictureBox52
             // 
             this.pictureBox52.BackColor = System.Drawing.Color.White;
-            this.pictureBox52.Location = new System.Drawing.Point(616, 309);
+            this.pictureBox52.Location = new System.Drawing.Point(615, 346);
             this.pictureBox52.Name = "pictureBox52";
             this.pictureBox52.Size = new System.Drawing.Size(79, 32);
             this.pictureBox52.TabIndex = 53;
@@ -831,7 +831,7 @@ namespace Arkanoid
             // pictureBox53
             // 
             this.pictureBox53.BackColor = System.Drawing.Color.White;
-            this.pictureBox53.Location = new System.Drawing.Point(701, 309);
+            this.pictureBox53.Location = new System.Drawing.Point(700, 346);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(79, 32);
             this.pictureBox53.TabIndex = 54;
@@ -841,7 +841,7 @@ namespace Arkanoid
             // pictureBox54
             // 
             this.pictureBox54.BackColor = System.Drawing.Color.White;
-            this.pictureBox54.Location = new System.Drawing.Point(786, 309);
+            this.pictureBox54.Location = new System.Drawing.Point(785, 346);
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.Size = new System.Drawing.Size(79, 32);
             this.pictureBox54.TabIndex = 55;
@@ -851,7 +851,7 @@ namespace Arkanoid
             // pictureBox55
             // 
             this.pictureBox55.BackColor = System.Drawing.Color.White;
-            this.pictureBox55.Location = new System.Drawing.Point(871, 271);
+            this.pictureBox55.Location = new System.Drawing.Point(869, 308);
             this.pictureBox55.Name = "pictureBox55";
             this.pictureBox55.Size = new System.Drawing.Size(79, 32);
             this.pictureBox55.TabIndex = 56;
@@ -861,7 +861,7 @@ namespace Arkanoid
             // pictureBox56
             // 
             this.pictureBox56.BackColor = System.Drawing.Color.White;
-            this.pictureBox56.Location = new System.Drawing.Point(21, 271);
+            this.pictureBox56.Location = new System.Drawing.Point(22, 308);
             this.pictureBox56.Name = "pictureBox56";
             this.pictureBox56.Size = new System.Drawing.Size(79, 32);
             this.pictureBox56.TabIndex = 57;
@@ -871,7 +871,7 @@ namespace Arkanoid
             // pictureBox57
             // 
             this.pictureBox57.BackColor = System.Drawing.Color.White;
-            this.pictureBox57.Location = new System.Drawing.Point(106, 347);
+            this.pictureBox57.Location = new System.Drawing.Point(107, 384);
             this.pictureBox57.Name = "pictureBox57";
             this.pictureBox57.Size = new System.Drawing.Size(79, 32);
             this.pictureBox57.TabIndex = 58;
@@ -881,7 +881,7 @@ namespace Arkanoid
             // pictureBox58
             // 
             this.pictureBox58.BackColor = System.Drawing.Color.White;
-            this.pictureBox58.Location = new System.Drawing.Point(191, 347);
+            this.pictureBox58.Location = new System.Drawing.Point(192, 384);
             this.pictureBox58.Name = "pictureBox58";
             this.pictureBox58.Size = new System.Drawing.Size(79, 32);
             this.pictureBox58.TabIndex = 59;
@@ -891,7 +891,7 @@ namespace Arkanoid
             // pictureBox59
             // 
             this.pictureBox59.BackColor = System.Drawing.Color.White;
-            this.pictureBox59.Location = new System.Drawing.Point(276, 347);
+            this.pictureBox59.Location = new System.Drawing.Point(276, 384);
             this.pictureBox59.Name = "pictureBox59";
             this.pictureBox59.Size = new System.Drawing.Size(79, 32);
             this.pictureBox59.TabIndex = 60;
@@ -901,7 +901,7 @@ namespace Arkanoid
             // pictureBox60
             // 
             this.pictureBox60.BackColor = System.Drawing.Color.White;
-            this.pictureBox60.Location = new System.Drawing.Point(360, 347);
+            this.pictureBox60.Location = new System.Drawing.Point(360, 384);
             this.pictureBox60.Name = "pictureBox60";
             this.pictureBox60.Size = new System.Drawing.Size(79, 32);
             this.pictureBox60.TabIndex = 61;
@@ -911,9 +911,9 @@ namespace Arkanoid
             // pictureBox61
             // 
             this.pictureBox61.BackColor = System.Drawing.Color.White;
-            this.pictureBox61.Location = new System.Drawing.Point(446, 347);
+            this.pictureBox61.Location = new System.Drawing.Point(444, 384);
             this.pictureBox61.Name = "pictureBox61";
-            this.pictureBox61.Size = new System.Drawing.Size(79, 32);
+            this.pictureBox61.Size = new System.Drawing.Size(80, 32);
             this.pictureBox61.TabIndex = 62;
             this.pictureBox61.TabStop = false;
             this.pictureBox61.Tag = "whiteblock";
@@ -921,7 +921,7 @@ namespace Arkanoid
             // pictureBox62
             // 
             this.pictureBox62.BackColor = System.Drawing.Color.White;
-            this.pictureBox62.Location = new System.Drawing.Point(531, 347);
+            this.pictureBox62.Location = new System.Drawing.Point(530, 384);
             this.pictureBox62.Name = "pictureBox62";
             this.pictureBox62.Size = new System.Drawing.Size(79, 32);
             this.pictureBox62.TabIndex = 63;
@@ -931,7 +931,7 @@ namespace Arkanoid
             // pictureBox63
             // 
             this.pictureBox63.BackColor = System.Drawing.Color.White;
-            this.pictureBox63.Location = new System.Drawing.Point(616, 347);
+            this.pictureBox63.Location = new System.Drawing.Point(615, 384);
             this.pictureBox63.Name = "pictureBox63";
             this.pictureBox63.Size = new System.Drawing.Size(79, 32);
             this.pictureBox63.TabIndex = 64;
@@ -941,7 +941,7 @@ namespace Arkanoid
             // pictureBox64
             // 
             this.pictureBox64.BackColor = System.Drawing.Color.White;
-            this.pictureBox64.Location = new System.Drawing.Point(701, 347);
+            this.pictureBox64.Location = new System.Drawing.Point(700, 384);
             this.pictureBox64.Name = "pictureBox64";
             this.pictureBox64.Size = new System.Drawing.Size(79, 32);
             this.pictureBox64.TabIndex = 65;
@@ -951,7 +951,7 @@ namespace Arkanoid
             // pictureBox65
             // 
             this.pictureBox65.BackColor = System.Drawing.Color.White;
-            this.pictureBox65.Location = new System.Drawing.Point(786, 347);
+            this.pictureBox65.Location = new System.Drawing.Point(785, 384);
             this.pictureBox65.Name = "pictureBox65";
             this.pictureBox65.Size = new System.Drawing.Size(79, 32);
             this.pictureBox65.TabIndex = 66;
@@ -961,7 +961,7 @@ namespace Arkanoid
             // pictureBox66
             // 
             this.pictureBox66.BackColor = System.Drawing.Color.White;
-            this.pictureBox66.Location = new System.Drawing.Point(871, 309);
+            this.pictureBox66.Location = new System.Drawing.Point(869, 346);
             this.pictureBox66.Name = "pictureBox66";
             this.pictureBox66.Size = new System.Drawing.Size(79, 32);
             this.pictureBox66.TabIndex = 67;
@@ -971,7 +971,7 @@ namespace Arkanoid
             // pictureBox67
             // 
             this.pictureBox67.BackColor = System.Drawing.Color.White;
-            this.pictureBox67.Location = new System.Drawing.Point(106, 271);
+            this.pictureBox67.Location = new System.Drawing.Point(107, 308);
             this.pictureBox67.Name = "pictureBox67";
             this.pictureBox67.Size = new System.Drawing.Size(79, 32);
             this.pictureBox67.TabIndex = 68;
@@ -981,7 +981,7 @@ namespace Arkanoid
             // pictureBox68
             // 
             this.pictureBox68.BackColor = System.Drawing.Color.White;
-            this.pictureBox68.Location = new System.Drawing.Point(616, 271);
+            this.pictureBox68.Location = new System.Drawing.Point(615, 308);
             this.pictureBox68.Name = "pictureBox68";
             this.pictureBox68.Size = new System.Drawing.Size(79, 32);
             this.pictureBox68.TabIndex = 69;
@@ -991,7 +991,7 @@ namespace Arkanoid
             // pictureBox69
             // 
             this.pictureBox69.BackColor = System.Drawing.Color.White;
-            this.pictureBox69.Location = new System.Drawing.Point(191, 271);
+            this.pictureBox69.Location = new System.Drawing.Point(192, 308);
             this.pictureBox69.Name = "pictureBox69";
             this.pictureBox69.Size = new System.Drawing.Size(79, 32);
             this.pictureBox69.TabIndex = 70;
@@ -1001,7 +1001,7 @@ namespace Arkanoid
             // pictureBox70
             // 
             this.pictureBox70.BackColor = System.Drawing.Color.White;
-            this.pictureBox70.Location = new System.Drawing.Point(276, 271);
+            this.pictureBox70.Location = new System.Drawing.Point(276, 308);
             this.pictureBox70.Name = "pictureBox70";
             this.pictureBox70.Size = new System.Drawing.Size(79, 32);
             this.pictureBox70.TabIndex = 71;
@@ -1011,7 +1011,7 @@ namespace Arkanoid
             // pictureBox71
             // 
             this.pictureBox71.BackColor = System.Drawing.Color.White;
-            this.pictureBox71.Location = new System.Drawing.Point(360, 271);
+            this.pictureBox71.Location = new System.Drawing.Point(360, 308);
             this.pictureBox71.Name = "pictureBox71";
             this.pictureBox71.Size = new System.Drawing.Size(79, 32);
             this.pictureBox71.TabIndex = 72;
@@ -1021,9 +1021,9 @@ namespace Arkanoid
             // pictureBox72
             // 
             this.pictureBox72.BackColor = System.Drawing.Color.White;
-            this.pictureBox72.Location = new System.Drawing.Point(446, 271);
+            this.pictureBox72.Location = new System.Drawing.Point(444, 308);
             this.pictureBox72.Name = "pictureBox72";
-            this.pictureBox72.Size = new System.Drawing.Size(79, 32);
+            this.pictureBox72.Size = new System.Drawing.Size(80, 32);
             this.pictureBox72.TabIndex = 73;
             this.pictureBox72.TabStop = false;
             this.pictureBox72.Tag = "whiteblock";
@@ -1031,7 +1031,7 @@ namespace Arkanoid
             // pictureBox73
             // 
             this.pictureBox73.BackColor = System.Drawing.Color.White;
-            this.pictureBox73.Location = new System.Drawing.Point(531, 271);
+            this.pictureBox73.Location = new System.Drawing.Point(530, 308);
             this.pictureBox73.Name = "pictureBox73";
             this.pictureBox73.Size = new System.Drawing.Size(79, 32);
             this.pictureBox73.TabIndex = 74;
@@ -1041,7 +1041,7 @@ namespace Arkanoid
             // pictureBox74
             // 
             this.pictureBox74.BackColor = System.Drawing.Color.White;
-            this.pictureBox74.Location = new System.Drawing.Point(701, 271);
+            this.pictureBox74.Location = new System.Drawing.Point(700, 308);
             this.pictureBox74.Name = "pictureBox74";
             this.pictureBox74.Size = new System.Drawing.Size(79, 32);
             this.pictureBox74.TabIndex = 75;
@@ -1051,7 +1051,7 @@ namespace Arkanoid
             // pictureBox75
             // 
             this.pictureBox75.BackColor = System.Drawing.Color.White;
-            this.pictureBox75.Location = new System.Drawing.Point(786, 271);
+            this.pictureBox75.Location = new System.Drawing.Point(785, 308);
             this.pictureBox75.Name = "pictureBox75";
             this.pictureBox75.Size = new System.Drawing.Size(79, 32);
             this.pictureBox75.TabIndex = 76;
@@ -1061,7 +1061,7 @@ namespace Arkanoid
             // pictureBox76
             // 
             this.pictureBox76.BackColor = System.Drawing.Color.Pink;
-            this.pictureBox76.Location = new System.Drawing.Point(21, 157);
+            this.pictureBox76.Location = new System.Drawing.Point(22, 194);
             this.pictureBox76.Name = "pictureBox76";
             this.pictureBox76.Size = new System.Drawing.Size(79, 32);
             this.pictureBox76.TabIndex = 77;
@@ -1071,8 +1071,8 @@ namespace Arkanoid
             // pictureBox77
             // 
             this.pictureBox77.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox77.Location = new System.Drawing.Point(106, 157);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox77.Location = new System.Drawing.Point(107, 194);
             this.pictureBox77.Name = "pictureBox77";
             this.pictureBox77.Size = new System.Drawing.Size(79, 32);
             this.pictureBox77.TabIndex = 78;
@@ -1082,8 +1082,8 @@ namespace Arkanoid
             // pictureBox78
             // 
             this.pictureBox78.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox78.Location = new System.Drawing.Point(191, 157);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox78.Location = new System.Drawing.Point(192, 194);
             this.pictureBox78.Name = "pictureBox78";
             this.pictureBox78.Size = new System.Drawing.Size(79, 32);
             this.pictureBox78.TabIndex = 79;
@@ -1093,8 +1093,8 @@ namespace Arkanoid
             // pictureBox79
             // 
             this.pictureBox79.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox79.Location = new System.Drawing.Point(276, 157);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox79.Location = new System.Drawing.Point(276, 194);
             this.pictureBox79.Name = "pictureBox79";
             this.pictureBox79.Size = new System.Drawing.Size(79, 32);
             this.pictureBox79.TabIndex = 80;
@@ -1104,8 +1104,8 @@ namespace Arkanoid
             // pictureBox80
             // 
             this.pictureBox80.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox80.Location = new System.Drawing.Point(360, 157);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox80.Location = new System.Drawing.Point(360, 194);
             this.pictureBox80.Name = "pictureBox80";
             this.pictureBox80.Size = new System.Drawing.Size(79, 32);
             this.pictureBox80.TabIndex = 81;
@@ -1115,10 +1115,10 @@ namespace Arkanoid
             // pictureBox81
             // 
             this.pictureBox81.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox81.Location = new System.Drawing.Point(446, 157);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox81.Location = new System.Drawing.Point(444, 194);
             this.pictureBox81.Name = "pictureBox81";
-            this.pictureBox81.Size = new System.Drawing.Size(79, 32);
+            this.pictureBox81.Size = new System.Drawing.Size(80, 32);
             this.pictureBox81.TabIndex = 82;
             this.pictureBox81.TabStop = false;
             this.pictureBox81.Tag = "pinkblock";
@@ -1126,8 +1126,8 @@ namespace Arkanoid
             // pictureBox82
             // 
             this.pictureBox82.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox82.Location = new System.Drawing.Point(531, 157);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox82.Location = new System.Drawing.Point(530, 194);
             this.pictureBox82.Name = "pictureBox82";
             this.pictureBox82.Size = new System.Drawing.Size(79, 32);
             this.pictureBox82.TabIndex = 83;
@@ -1137,8 +1137,8 @@ namespace Arkanoid
             // pictureBox83
             // 
             this.pictureBox83.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox83.Location = new System.Drawing.Point(616, 157);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox83.Location = new System.Drawing.Point(615, 194);
             this.pictureBox83.Name = "pictureBox83";
             this.pictureBox83.Size = new System.Drawing.Size(79, 32);
             this.pictureBox83.TabIndex = 84;
@@ -1148,8 +1148,8 @@ namespace Arkanoid
             // pictureBox84
             // 
             this.pictureBox84.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox84.Location = new System.Drawing.Point(701, 157);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox84.Location = new System.Drawing.Point(700, 194);
             this.pictureBox84.Name = "pictureBox84";
             this.pictureBox84.Size = new System.Drawing.Size(79, 32);
             this.pictureBox84.TabIndex = 85;
@@ -1159,8 +1159,8 @@ namespace Arkanoid
             // pictureBox85
             // 
             this.pictureBox85.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox85.Location = new System.Drawing.Point(786, 157);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox85.Location = new System.Drawing.Point(785, 194);
             this.pictureBox85.Name = "pictureBox85";
             this.pictureBox85.Size = new System.Drawing.Size(79, 32);
             this.pictureBox85.TabIndex = 86;
@@ -1170,8 +1170,8 @@ namespace Arkanoid
             // pictureBox86
             // 
             this.pictureBox86.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.pictureBox86.Location = new System.Drawing.Point(871, 157);
+                ((int) (((byte) (192)))), ((int) (((byte) (192)))));
+            this.pictureBox86.Location = new System.Drawing.Point(869, 194);
             this.pictureBox86.Name = "pictureBox86";
             this.pictureBox86.Size = new System.Drawing.Size(79, 32);
             this.pictureBox86.TabIndex = 87;
@@ -1182,7 +1182,7 @@ namespace Arkanoid
             // 
             this.pictureBox87.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox87.Location = new System.Drawing.Point(21, 119);
+            this.pictureBox87.Location = new System.Drawing.Point(22, 156);
             this.pictureBox87.Name = "pictureBox87";
             this.pictureBox87.Size = new System.Drawing.Size(79, 32);
             this.pictureBox87.TabIndex = 88;
@@ -1193,7 +1193,7 @@ namespace Arkanoid
             // 
             this.pictureBox88.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox88.Location = new System.Drawing.Point(106, 119);
+            this.pictureBox88.Location = new System.Drawing.Point(107, 156);
             this.pictureBox88.Name = "pictureBox88";
             this.pictureBox88.Size = new System.Drawing.Size(79, 32);
             this.pictureBox88.TabIndex = 89;
@@ -1204,7 +1204,7 @@ namespace Arkanoid
             // 
             this.pictureBox89.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox89.Location = new System.Drawing.Point(191, 119);
+            this.pictureBox89.Location = new System.Drawing.Point(192, 156);
             this.pictureBox89.Name = "pictureBox89";
             this.pictureBox89.Size = new System.Drawing.Size(79, 32);
             this.pictureBox89.TabIndex = 90;
@@ -1215,7 +1215,7 @@ namespace Arkanoid
             // 
             this.pictureBox90.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox90.Location = new System.Drawing.Point(275, 119);
+            this.pictureBox90.Location = new System.Drawing.Point(276, 156);
             this.pictureBox90.Name = "pictureBox90";
             this.pictureBox90.Size = new System.Drawing.Size(79, 32);
             this.pictureBox90.TabIndex = 91;
@@ -1226,7 +1226,7 @@ namespace Arkanoid
             // 
             this.pictureBox91.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox91.Location = new System.Drawing.Point(360, 119);
+            this.pictureBox91.Location = new System.Drawing.Point(360, 156);
             this.pictureBox91.Name = "pictureBox91";
             this.pictureBox91.Size = new System.Drawing.Size(79, 32);
             this.pictureBox91.TabIndex = 92;
@@ -1237,9 +1237,9 @@ namespace Arkanoid
             // 
             this.pictureBox92.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox92.Location = new System.Drawing.Point(446, 119);
+            this.pictureBox92.Location = new System.Drawing.Point(444, 156);
             this.pictureBox92.Name = "pictureBox92";
-            this.pictureBox92.Size = new System.Drawing.Size(79, 32);
+            this.pictureBox92.Size = new System.Drawing.Size(80, 32);
             this.pictureBox92.TabIndex = 93;
             this.pictureBox92.TabStop = false;
             this.pictureBox92.Tag = "redblock";
@@ -1248,7 +1248,7 @@ namespace Arkanoid
             // 
             this.pictureBox93.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox93.Location = new System.Drawing.Point(531, 119);
+            this.pictureBox93.Location = new System.Drawing.Point(530, 156);
             this.pictureBox93.Name = "pictureBox93";
             this.pictureBox93.Size = new System.Drawing.Size(79, 32);
             this.pictureBox93.TabIndex = 94;
@@ -1259,7 +1259,7 @@ namespace Arkanoid
             // 
             this.pictureBox94.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox94.Location = new System.Drawing.Point(616, 119);
+            this.pictureBox94.Location = new System.Drawing.Point(615, 156);
             this.pictureBox94.Name = "pictureBox94";
             this.pictureBox94.Size = new System.Drawing.Size(79, 32);
             this.pictureBox94.TabIndex = 95;
@@ -1270,7 +1270,7 @@ namespace Arkanoid
             // 
             this.pictureBox95.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox95.Location = new System.Drawing.Point(701, 119);
+            this.pictureBox95.Location = new System.Drawing.Point(700, 156);
             this.pictureBox95.Name = "pictureBox95";
             this.pictureBox95.Size = new System.Drawing.Size(79, 32);
             this.pictureBox95.TabIndex = 96;
@@ -1281,7 +1281,7 @@ namespace Arkanoid
             // 
             this.pictureBox96.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox96.Location = new System.Drawing.Point(786, 119);
+            this.pictureBox96.Location = new System.Drawing.Point(785, 156);
             this.pictureBox96.Name = "pictureBox96";
             this.pictureBox96.Size = new System.Drawing.Size(79, 32);
             this.pictureBox96.TabIndex = 97;
@@ -1292,7 +1292,7 @@ namespace Arkanoid
             // 
             this.pictureBox97.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox97.Location = new System.Drawing.Point(871, 119);
+            this.pictureBox97.Location = new System.Drawing.Point(869, 156);
             this.pictureBox97.Name = "pictureBox97";
             this.pictureBox97.Size = new System.Drawing.Size(79, 32);
             this.pictureBox97.TabIndex = 98;
@@ -1333,7 +1333,7 @@ namespace Arkanoid
             this.picLeftWall.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.picLeftWall.Location = new System.Drawing.Point(0, 43);
             this.picLeftWall.Name = "picLeftWall";
-            this.picLeftWall.Size = new System.Drawing.Size(15, 698);
+            this.picLeftWall.Size = new System.Drawing.Size(16, 697);
             this.picLeftWall.TabIndex = 102;
             this.picLeftWall.TabStop = false;
             this.picLeftWall.Tag = "wall";
@@ -1348,17 +1348,6 @@ namespace Arkanoid
             this.picRightWall.TabStop = false;
             this.picRightWall.Tag = "wall";
             // 
-            // pictureBox100
-            // 
-            this.pictureBox100.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
-                ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.pictureBox100.Location = new System.Drawing.Point(871, 347);
-            this.pictureBox100.Name = "pictureBox100";
-            this.pictureBox100.Size = new System.Drawing.Size(79, 32);
-            this.pictureBox100.TabIndex = 104;
-            this.pictureBox100.TabStop = false;
-            this.pictureBox100.Tag = "redblock";
-            // 
             // picDownWall
             // 
             this.picDownWall.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -1371,13 +1360,15 @@ namespace Arkanoid
             // 
             // lblLifes
             // 
-            this.lblLifes.BackColor = System.Drawing.Color.DimGray;
+            this.lblLifes.BackColor = System.Drawing.Color.Black;
             this.lblLifes.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.lblLifes.Location = new System.Drawing.Point(777, 3);
+            this.lblLifes.ForeColor = System.Drawing.Color.White;
+            this.lblLifes.Location = new System.Drawing.Point(805, 3);
             this.lblLifes.Name = "lblLifes";
-            this.lblLifes.Size = new System.Drawing.Size(173, 28);
+            this.lblLifes.Size = new System.Drawing.Size(146, 33);
             this.lblLifes.TabIndex = 106;
+            this.lblLifes.Tag = "hud";
             // 
             // frmGame
             // 
@@ -1388,7 +1379,6 @@ namespace Arkanoid
             this.ClientSize = new System.Drawing.Size(973, 738);
             this.Controls.Add(this.lblLifes);
             this.Controls.Add(this.picDownWall);
-            this.Controls.Add(this.pictureBox100);
             this.Controls.Add(this.picRightWall);
             this.Controls.Add(this.picLeftWall);
             this.Controls.Add(this.player);
@@ -1600,7 +1590,6 @@ namespace Arkanoid
             ((System.ComponentModel.ISupportInitialize) (this.ball)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.picLeftWall)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.picRightWall)).EndInit();
-            ((System.ComponentModel.ISupportInitialize) (this.pictureBox100)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.picDownWall)).EndInit();
             this.ResumeLayout(false);
         }
@@ -1708,7 +1697,6 @@ namespace Arkanoid
         private System.Windows.Forms.PictureBox ball;
         private System.Windows.Forms.Button player;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox pictureBox100;
         private System.Windows.Forms.PictureBox picLeftWall;
         private System.Windows.Forms.PictureBox picRightWall;
         private System.Windows.Forms.PictureBox picDownWall;

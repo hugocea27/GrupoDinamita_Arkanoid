@@ -8,12 +8,15 @@ namespace Arkanoid
     public partial class frmGame : Form
     {
         bool goToLeft, goToRight;
-        int speed = 15, ballX = 10, ballY = 10, score = 0, life=3;
+        int speed = 15, ballX = 10, ballY = 10, life=3;
+        public static int score;
 
         public frmGame()
         {
             InitializeComponent();
+            score = 0;
         }
+        
         //evento de apretar tecla
         private void keyDown(object sender, KeyEventArgs e)
         {
@@ -56,6 +59,11 @@ namespace Arkanoid
                 
                 //Rebotes con el techo
                 if (x is PictureBox && x.Tag == "topwall")
+                {
+                    if(ball.Bounds.IntersectsWith(x.Bounds)) { ballY = -ballY; }
+                }
+                
+                if (x is Label && x.Tag == "hud")
                 {
                     if(ball.Bounds.IntersectsWith(x.Bounds)) { ballY = -ballY; }
                 }
@@ -105,8 +113,20 @@ namespace Arkanoid
                         else
                         {
                             gameover();
+                            frmGameOver window = new frmGameOver();
+                            window.Show();
+                            this.Hide();
                         }
                     }
+                }
+                
+                //si el jugador destruye todos los bloques
+                if (score == 97)
+                {
+                    gameover();
+                    frmGameOver window = new frmGameOver();
+                    window.Show();
+                    this.Hide();
                 }
             }
         }
@@ -114,7 +134,6 @@ namespace Arkanoid
         private void gameover()
         {
             timer1.Stop();
-            MessageBox.Show("Fin del juego");
         }
 
         private void lostLife()
