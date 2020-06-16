@@ -20,7 +20,7 @@ namespace Arkanoid
 
         private void btmRanking_Click(object sender, EventArgs e)
         {
-            Ranking window = new Ranking();
+            frmRanking window = new frmRanking();
             window.Show();
             this.Hide();
         }

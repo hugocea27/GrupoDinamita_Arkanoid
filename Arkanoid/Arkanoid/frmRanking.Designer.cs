@@ -2,7 +2,7 @@
 
 namespace Arkanoid
 {
-    partial class Ranking
+    partial class frmRanking
     {
         /// <summary>
         /// Required designer variable.
@@ -33,15 +33,16 @@ namespace Arkanoid
         {
             this.SuspendLayout();
             // 
-            // Ranking
+            // frmRanking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Arkanoid.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(973, 738);
-            this.Name = "Ranking";
+            this.Name = "frmRanking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ranking";
+            this.Text = "frmRanking";
             this.ResumeLayout(false);
         }
 

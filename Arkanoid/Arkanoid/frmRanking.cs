@@ -2,9 +2,9 @@
 
 namespace Arkanoid
 {
-    public partial class Ranking : Form
+    public partial class frmRanking : Form
     {
-        public Ranking()
+        public frmRanking()
         {
             InitializeComponent();
         }

@@ -8,5 +8,5 @@ C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkan
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.pdb
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmGame.resources
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmMainMenu.resources
-C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.Ranking.resources
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmGameOver.resources
+C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmRanking.resources
