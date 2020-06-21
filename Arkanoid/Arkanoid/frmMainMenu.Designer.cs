@@ -34,6 +34,7 @@ namespace Arkanoid
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btmPlay = new System.Windows.Forms.Button();
             this.btmRanking = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,6 +79,21 @@ namespace Arkanoid
             this.btmRanking.UseVisualStyleBackColor = false;
             this.btmRanking.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
+                ((int) (((byte) (0)))));
+            this.button1.Location = new System.Drawing.Point(433, 526);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 51);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "SALIR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -87,6 +103,7 @@ namespace Arkanoid
             this.BackgroundImage = global::Arkanoid.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(973, 738);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btmRanking);
             this.Controls.Add(this.btmPlay);
             this.Controls.Add(this.pictureBox1);
@@ -102,5 +119,6 @@ namespace Arkanoid
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btmPlay;
         private System.Windows.Forms.Button btmRanking;
+        private System.Windows.Forms.Button button1;
     }
 }

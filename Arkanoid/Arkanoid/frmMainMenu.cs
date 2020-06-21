@@ -19,9 +19,17 @@ namespace Arkanoid
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmRanking window = new frmRanking();
+            frmRankingMenu window = new frmRankingMenu();
             window.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Saliendo...\n\n" +
+                            "Esperamos que vuelvas pronto.");
+            this.Close();
+            Application.Exit();
         }
     }
 }

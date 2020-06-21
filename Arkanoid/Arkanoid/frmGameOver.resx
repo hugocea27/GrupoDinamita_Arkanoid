@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblScore2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="lblFinalScore.Font" type="System.Drawing.Font, System.Drawing">
     <value>Consolas, 27.75pt, style=Bold</value>
@@ -179,7 +179,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblFinalScore.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="lblSaveName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Consolas, 20.25pt, style=Bold</value>
@@ -212,7 +212,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblSaveName.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>386, 313</value>
@@ -233,16 +233,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="btmSaveScore.Font" type="System.Drawing.Font, System.Drawing">
     <value>Consolas, 14.25pt, style=Bold</value>
   </data>
   <data name="btmSaveScore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 353</value>
+    <value>566, 537</value>
   </data>
   <data name="btmSaveScore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 54</value>
+    <value>164, 72</value>
   </data>
   <data name="btmSaveScore.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -260,36 +260,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btmSaveScore.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btmGoToMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Consolas, 14.25pt, style=Bold</value>
-  </data>
-  <data name="btmGoToMenu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btmGoToMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 558</value>
-  </data>
-  <data name="btmGoToMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 72</value>
-  </data>
-  <data name="btmGoToMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btmGoToMenu.Text" xml:space="preserve">
-    <value>Volver al Menú</value>
-  </data>
-  <data name="&gt;&gt;btmGoToMenu.Name" xml:space="preserve">
-    <value>btmGoToMenu</value>
-  </data>
-  <data name="&gt;&gt;btmGoToMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btmGoToMenu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btmGoToMenu.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="btmRanking.Font" type="System.Drawing.Font, System.Drawing">
@@ -299,7 +269,7 @@
     <value>NoControl</value>
   </data>
   <data name="btmRanking.Location" type="System.Drawing.Point, System.Drawing">
-    <value>561, 558</value>
+    <value>261, 537</value>
   </data>
   <data name="btmRanking.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 72</value>

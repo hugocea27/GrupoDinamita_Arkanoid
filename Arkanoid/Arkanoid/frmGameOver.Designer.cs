@@ -38,7 +38,6 @@ namespace Arkanoid
             this.lblSaveName = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btmSaveScore = new System.Windows.Forms.Button();
-            this.btmGoToMenu = new System.Windows.Forms.Button();
             this.btmRanking = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -81,16 +80,6 @@ namespace Arkanoid
             this.btmSaveScore.UseVisualStyleBackColor = false;
             this.btmSaveScore.Click += new System.EventHandler(this.btmSaveScore_Click);
             // 
-            // btmGoToMenu
-            // 
-            this.btmGoToMenu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            resources.ApplyResources(this.btmGoToMenu, "btmGoToMenu");
-            this.btmGoToMenu.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
-                ((int) (((byte) (0)))));
-            this.btmGoToMenu.Name = "btmGoToMenu";
-            this.btmGoToMenu.UseVisualStyleBackColor = false;
-            this.btmGoToMenu.Click += new System.EventHandler(this.btmGoToMenu_Click);
-            // 
             // btmRanking
             // 
             this.btmRanking.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -107,7 +96,6 @@ namespace Arkanoid
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Arkanoid.Properties.Resources.background;
             this.Controls.Add(this.btmRanking);
-            this.Controls.Add(this.btmGoToMenu);
             this.Controls.Add(this.btmSaveScore);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblSaveName);
@@ -123,7 +111,6 @@ namespace Arkanoid
         private System.Windows.Forms.Label lblScore2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblSaveName;
-        private System.Windows.Forms.Button btmGoToMenu;
         private System.Windows.Forms.Button btmSaveScore;
         private System.Windows.Forms.Button btmRanking;
         private System.Windows.Forms.Label lblFinalScore;

@@ -8,14 +8,7 @@ namespace Arkanoid
         public frmGameOver()
         {
             InitializeComponent();
-            lblFinalScore.Text = "Tu puntaje: "+frmGame.score;
-        }
-        
-        private void btmGoToMenu_Click(object sender, EventArgs e)
-        {
-            frmMainMenu window = new frmMainMenu();
-            window.Show();
-            this.Hide();
+            lblFinalScore.Text = "Tu puntaje: "+ frmGame.score;
         }
 
         private void btmRanking_Click(object sender, EventArgs e)
@@ -27,7 +20,29 @@ namespace Arkanoid
 
         private void btmSaveScore_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Debes ingresar un usuario.");
+            }
+            else
+            {
+                try
+                {
+                    string nonQuery = "INSERT INTO gamerank (username, gamescore) VALUES (" +
+                                      $"'{textBox1.Text}', " +
+                                      $"{frmGame.score})";
+
+                    ConnectionDB.ExecuteNonQuery(nonQuery);
+                    MessageBox.Show("Datos guardados exitosamente.");
+                    frmMainMenu menu = new frmMainMenu();
+                    menu.Show();
+                    this.Close();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ese nombre de usuario ya está en uso.");
+                }
+            }
         }
     }
 }
