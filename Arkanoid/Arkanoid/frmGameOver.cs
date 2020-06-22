@@ -8,24 +8,24 @@ namespace Arkanoid
         public frmGameOver()
         {
             InitializeComponent();
-            lblFinalScore.Text = "Tu puntaje: "+ frmGame.score;
+            lbl_finalscore.Text = "Tu puntaje: "+ frmGame.score;
 
             if (frmGame.score == 110)
             {
-                lblMaxScore.Text = "¡PUNTAJE MÁXIMO!";
+                lbl_maxscore.Text = "¡PUNTAJE MÁXIMO!";
             }
         }
 
         private void btmRanking_Click(object sender, EventArgs e)
         {
-            frmRanking window = new frmRanking();
+            frmRankingMenu window = new frmRankingMenu();
             window.Show();
             this.Hide();
         }
 
         private void btmSaveScore_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (txt_nickname.Text == "")
             {
                 MessageBox.Show("Debes ingresar un usuario.");
             }
@@ -34,7 +34,7 @@ namespace Arkanoid
                 try
                 {
                     string nonQuery = "INSERT INTO gamerank (username, gamescore) VALUES (" +
-                                      $"'{textBox1.Text}', " +
+                                      $"'{txt_nickname.Text}', " +
                                       $"{frmGame.score})";
 
                     ConnectionDB.ExecuteNonQuery(nonQuery);
@@ -48,6 +48,13 @@ namespace Arkanoid
                     MessageBox.Show("Ese nombre de usuario ya está en uso.");
                 }
             }
+        }
+
+        private void btm_gotomenu_Click(object sender, EventArgs e)
+        {
+            frmMainMenu window = new frmMainMenu();
+            window.Show();
+            this.Hide();
         }
     }
 }

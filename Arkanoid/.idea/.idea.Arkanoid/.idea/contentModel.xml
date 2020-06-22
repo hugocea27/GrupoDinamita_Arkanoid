@@ -18,9 +18,6 @@
         <e p="frmMainMenu.cs" t="Include" />
         <e p="frmMainMenu.Designer.cs" t="Include" />
         <e p="frmMainMenu.resx" t="Include" />
-        <e p="frmRanking.cs" t="Include" />
-        <e p="frmRanking.Designer.cs" t="Include" />
-        <e p="frmRanking.resx" t="Include" />
         <e p="frmRankingMenu.cs" t="Include" />
         <e p="frmRankingMenu.Designer.cs" t="Include" />
         <e p="frmRankingMenu.resx" t="Include" />
@@ -41,6 +38,7 @@
           <e p="btmPlay.png" t="Include" />
           <e p="btmRanking.png" t="Include" />
           <e p="player.jpg" t="Include" />
+          <e p="Player.png" t="Include" />
           <e p="pngfuel.png" t="Include" />
           <e p="Tile___blinded.png" t="Include" />
           <e p="Tile___blinded_broken.png" t="Include" />

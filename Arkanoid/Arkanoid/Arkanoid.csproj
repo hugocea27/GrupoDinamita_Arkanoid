@@ -111,12 +111,6 @@
         <Compile Include="frmMainMenu.Designer.cs">
           <DependentUpon>frmMainMenu.cs</DependentUpon>
         </Compile>
-        <Compile Include="frmRanking.cs">
-          <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="frmRanking.Designer.cs">
-          <DependentUpon>frmRanking.cs</DependentUpon>
-        </Compile>
         <Compile Include="frmRankingMenu.cs">
           <SubType>Form</SubType>
         </Compile>
@@ -133,9 +127,6 @@
         </EmbeddedResource>
         <EmbeddedResource Include="frmMainMenu.resx">
           <DependentUpon>frmMainMenu.cs</DependentUpon>
-        </EmbeddedResource>
-        <EmbeddedResource Include="frmRanking.resx">
-          <DependentUpon>frmRanking.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="frmRankingMenu.resx">
           <DependentUpon>frmRankingMenu.cs</DependentUpon>
@@ -170,6 +161,7 @@
       <Content Include="Resources\btmPlay.png" />
       <Content Include="Resources\btmRanking.png" />
       <Content Include="Resources\player.jpg" />
+      <Content Include="Resources\Player.png" />
       <Content Include="Resources\pngfuel.png" />
       <Content Include="Resources\Tile___blinded.png" />
       <Content Include="Resources\Tile___blinded_broken.png" />

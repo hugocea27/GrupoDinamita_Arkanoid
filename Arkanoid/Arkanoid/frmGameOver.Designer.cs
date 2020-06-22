@@ -33,43 +33,43 @@ namespace Arkanoid
         {
             System.ComponentModel.ComponentResourceManager resources =
                 new System.ComponentModel.ComponentResourceManager(typeof(frmGameOver));
-            this.lblScore2 = new System.Windows.Forms.Label();
-            this.lblFinalScore = new System.Windows.Forms.Label();
-            this.lblSaveName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbl_gameover = new System.Windows.Forms.Label();
+            this.lbl_finalscore = new System.Windows.Forms.Label();
+            this.lbl_savename = new System.Windows.Forms.Label();
+            this.txt_nickname = new System.Windows.Forms.TextBox();
             this.btmSaveScore = new System.Windows.Forms.Button();
-            this.btmRanking = new System.Windows.Forms.Button();
-            this.lblMaxScore = new System.Windows.Forms.Label();
+            this.lbl_maxscore = new System.Windows.Forms.Label();
+            this.btm_gotomenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblScore2
+            // lbl_gameover
             // 
-            this.lblScore2.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lblScore2, "lblScore2");
-            this.lblScore2.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
-                ((int) (((byte) (0)))));
-            this.lblScore2.Name = "lblScore2";
-            // 
-            // lblFinalScore
-            // 
-            this.lblFinalScore.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lblFinalScore, "lblFinalScore");
-            this.lblFinalScore.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
+            this.lbl_gameover.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lbl_gameover, "lbl_gameover");
+            this.lbl_gameover.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
-            this.lblFinalScore.Name = "lblFinalScore";
+            this.lbl_gameover.Name = "lbl_gameover";
             // 
-            // lblSaveName
+            // lbl_finalscore
             // 
-            this.lblSaveName.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lblSaveName, "lblSaveName");
-            this.lblSaveName.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
-                ((int) (((byte) (0)))));
-            this.lblSaveName.Name = "lblSaveName";
+            this.lbl_finalscore.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lbl_finalscore, "lbl_finalscore");
+            this.lbl_finalscore.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
+                ((int) (((byte) (0)))), ((int) (((byte) (0)))));
+            this.lbl_finalscore.Name = "lbl_finalscore";
             // 
-            // textBox1
+            // lbl_savename
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            this.lbl_savename.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lbl_savename, "lbl_savename");
+            this.lbl_savename.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
+                ((int) (((byte) (0)))), ((int) (((byte) (0)))));
+            this.lbl_savename.Name = "lbl_savename";
+            // 
+            // txt_nickname
+            // 
+            resources.ApplyResources(this.txt_nickname, "txt_nickname");
+            this.txt_nickname.Name = "txt_nickname";
             // 
             // btmSaveScore
             // 
@@ -81,36 +81,38 @@ namespace Arkanoid
             this.btmSaveScore.UseVisualStyleBackColor = false;
             this.btmSaveScore.Click += new System.EventHandler(this.btmSaveScore_Click);
             // 
-            // btmRanking
+            // lbl_maxscore
             // 
-            this.btmRanking.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            resources.ApplyResources(this.btmRanking, "btmRanking");
-            this.btmRanking.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
-                ((int) (((byte) (0)))));
-            this.btmRanking.Name = "btmRanking";
-            this.btmRanking.UseVisualStyleBackColor = false;
-            this.btmRanking.Click += new System.EventHandler(this.btmRanking_Click);
+            this.lbl_maxscore.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lbl_maxscore, "lbl_maxscore");
+            this.lbl_maxscore.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
+                ((int) (((byte) (0)))), ((int) (((byte) (0)))));
+            this.lbl_maxscore.Name = "lbl_maxscore";
             // 
-            // lblMaxScore
+            // btm_gotomenu
             // 
-            this.lblMaxScore.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lblMaxScore, "lblMaxScore");
-            this.lblMaxScore.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
-                ((int) (((byte) (0)))));
-            this.lblMaxScore.Name = "lblMaxScore";
+            this.btm_gotomenu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this.btm_gotomenu, "btm_gotomenu");
+            this.btm_gotomenu.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
+                ((int) (((byte) (0)))), ((int) (((byte) (0)))));
+            this.btm_gotomenu.Name = "btm_gotomenu";
+            this.btm_gotomenu.UseVisualStyleBackColor = false;
+            this.btm_gotomenu.Click += new System.EventHandler(this.btm_gotomenu_Click);
             // 
             // frmGameOver
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Arkanoid.Properties.Resources.background;
-            this.Controls.Add(this.lblMaxScore);
-            this.Controls.Add(this.btmRanking);
+            this.Controls.Add(this.btm_gotomenu);
+            this.Controls.Add(this.lbl_maxscore);
             this.Controls.Add(this.btmSaveScore);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblSaveName);
-            this.Controls.Add(this.lblFinalScore);
-            this.Controls.Add(this.lblScore2);
+            this.Controls.Add(this.txt_nickname);
+            this.Controls.Add(this.lbl_savename);
+            this.Controls.Add(this.lbl_finalscore);
+            this.Controls.Add(this.lbl_gameover);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmGameOver";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,12 +120,12 @@ namespace Arkanoid
 
         #endregion
 
-        private System.Windows.Forms.Label lblScore2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblSaveName;
         private System.Windows.Forms.Button btmSaveScore;
-        private System.Windows.Forms.Button btmRanking;
-        private System.Windows.Forms.Label lblFinalScore;
-        private System.Windows.Forms.Label lblMaxScore;
+        private System.Windows.Forms.Label lbl_finalscore;
+        private System.Windows.Forms.Label lbl_savename;
+        private System.Windows.Forms.Label lbl_gameover;
+        private System.Windows.Forms.TextBox txt_nickname;
+        private System.Windows.Forms.Label lbl_maxscore;
+        private System.Windows.Forms.Button btm_gotomenu;
     }
 }

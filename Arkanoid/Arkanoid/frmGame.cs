@@ -21,12 +21,12 @@ namespace Arkanoid
         private void keyDown(object sender, KeyEventArgs e)
         {
             //Si se está presionando la tecla y el jugador no colisiona con la pared izquierda
-            if (e.KeyCode == Keys.Left && player.Bounds.IntersectsWith(picLeftWall.Bounds) == false)
+            if (e.KeyCode == Keys.Left && btm_player.Bounds.IntersectsWith(pic_leftwall.Bounds) == false)
             {
                 goToLeft = true;
             }
             //Si se está presionando la tecla y el jugador no colisiona con la pared derecha
-            if (e.KeyCode == Keys.Right && player.Bounds.IntersectsWith(picRightWall.Bounds) == false)
+            if (e.KeyCode == Keys.Right && btm_player.Bounds.IntersectsWith(pic_rightwall.Bounds) == false)
             {
                 goToRight = true;
             }
@@ -42,21 +42,21 @@ namespace Arkanoid
         private void timer1_Tick(object sender, EventArgs e)
         {
             //Vidas y puntaje
-            lblScore.Text = "PUNTAJE: " + score;
-            lblLifes.Text = "VIDA: " + life;
+            lbl_score.Text = "PUNTAJE: " + score;
+            lbl_life.Text = "VIDA: " + life;
             
             //moviemiento del jugador
-            if (goToLeft) { player.Left -= speed; } //ir izquierda
-            if (goToRight) { player.Left += speed; } //ir derecha
+            if (goToLeft) { btm_player.Left -= speed; } //ir izquierda
+            if (goToRight) { btm_player.Left += speed; } //ir derecha
             
             //moviemiento bola
-            ball.Left += ballX;
-            ball.Top += ballY;
+            pic_ball.Left += ballX;
+            pic_ball.Top += ballY;
 
             //Colisiones del jugador
-            if (player.Bounds.IntersectsWith(ball.Bounds)) { ballY = -ballY; } //con la bola
-            if (player.Bounds.IntersectsWith(picLeftWall.Bounds)) { goToLeft = false; } //con pared izquierda
-            else if (player.Bounds.IntersectsWith(picRightWall.Bounds)) { goToRight = false; } //con pared derecha
+            if (btm_player.Bounds.IntersectsWith(pic_ball.Bounds)) { ballY = -ballY; } //con la bola
+            if (btm_player.Bounds.IntersectsWith(pic_leftwall.Bounds)) { goToLeft = false; } //con pared izquierda
+            else if (btm_player.Bounds.IntersectsWith(pic_rightwall.Bounds)) { goToRight = false; } //con pared derecha
 
             //rebotes de la bola
             foreach (Control x in this.Controls)
@@ -64,19 +64,19 @@ namespace Arkanoid
                 //Rebotes con las paredes
                 if (x is PictureBox && x.Tag == "wall")
                 {
-                    if(ball.Bounds.IntersectsWith(x.Bounds)){ ballX = -ballX; }
+                    if(pic_ball.Bounds.IntersectsWith(x.Bounds)){ ballX = -ballX; }
                 }
                 
                 //Rebotes con el techo
                 if (x is PictureBox && x.Tag == "topwall")
                 {
-                    if(ball.Bounds.IntersectsWith(x.Bounds)) { ballY = -ballY; }
+                    if(pic_ball.Bounds.IntersectsWith(x.Bounds)) { ballY = -ballY; }
                 }
 
                 //Colisión con bloque básico (necesita 1 golpe)
                 if (x is PictureBox && x.Tag == "basicblock")
                 {
-                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    if (pic_ball.Bounds.IntersectsWith(x.Bounds))
                     {
                         this.Controls.Remove(x);
                         ballY = -ballY;
@@ -87,7 +87,7 @@ namespace Arkanoid
                 //Colisión con bloque roto (necesita 2 golpes)
                 if (x is PictureBox && x.Tag == "brokenblock")
                 {
-                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    if (pic_ball.Bounds.IntersectsWith(x.Bounds))
                     {
                         ballY = -ballY;
                         x.Tag = "basicblock"; 
@@ -98,7 +98,7 @@ namespace Arkanoid
                 //Colisión con bloque blindado (necesita 3 golpes)
                 if (x is PictureBox && x.Tag == "blindedblock")
                 {
-                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    if (pic_ball.Bounds.IntersectsWith(x.Bounds))
                     {
                         ballY = -ballY;
                         x.Tag = "brokenblock"; 
@@ -109,7 +109,7 @@ namespace Arkanoid
                 //Si la bola toca con el fondo 
                 if (x is PictureBox && x.Tag == "downWall")
                 {
-                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    if (pic_ball.Bounds.IntersectsWith(x.Bounds))
                     {
                         if (life > 0) //Si tiene vidas
                         {
@@ -144,7 +144,7 @@ namespace Arkanoid
             timer1.Stop();
             MessageBox.Show("Perdiste 1 vida");
             life--;
-            ball.Location = new Point(player.Location.X + 30, player.Location.Y - 50);
+            pic_ball.Location = new Point(btm_player.Location.X + 30, btm_player.Location.Y - 50);
             timer1.Start();
         }
     }

@@ -31,84 +31,87 @@ namespace Arkanoid
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 =
+                new System.Windows.Forms.DataGridViewCellStyle();
+            this.lbl_rankingarkanoid = new System.Windows.Forms.Label();
+            this.btm_gotomenu = new System.Windows.Forms.Button();
+            this.dgw_ranking = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize) (this.dgw_ranking)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_rankingarkanoid
             // 
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold,
+            this.lbl_rankingarkanoid.BackColor = System.Drawing.Color.Black;
+            this.lbl_rankingarkanoid.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(218, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 43);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Ranking ARKANOID";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_rankingarkanoid.ForeColor = System.Drawing.Color.Red;
+            this.lbl_rankingarkanoid.Location = new System.Drawing.Point(293, 65);
+            this.lbl_rankingarkanoid.Name = "lbl_rankingarkanoid";
+            this.lbl_rankingarkanoid.Size = new System.Drawing.Size(457, 43);
+            this.lbl_rankingarkanoid.TabIndex = 3;
+            this.lbl_rankingarkanoid.Text = "RANKING ARKANOID";
+            this.lbl_rankingarkanoid.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // dataGridView1
+            // btm_gotomenu
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode =
+            this.btm_gotomenu.BackColor = System.Drawing.Color.Black;
+            this.btm_gotomenu.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btm_gotomenu.ForeColor = System.Drawing.Color.Red;
+            this.btm_gotomenu.Location = new System.Drawing.Point(371, 467);
+            this.btm_gotomenu.Name = "btm_gotomenu";
+            this.btm_gotomenu.Size = new System.Drawing.Size(317, 45);
+            this.btm_gotomenu.TabIndex = 24;
+            this.btm_gotomenu.Text = "Salir al Menu";
+            this.btm_gotomenu.UseVisualStyleBackColor = false;
+            this.btm_gotomenu.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dgw_ranking
+            // 
+            this.dgw_ranking.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgw_ranking.ColumnHeadersHeightSizeMode =
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(164, 90);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(457, 269);
-            this.dataGridView1.TabIndex = 23;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
+            this.dgw_ranking.ColumnHeadersVisible = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(73, 396);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(317, 45);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Salir al Menu";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(423, 396);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(317, 45);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Mostrar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (0)))),
+                ((int) (((byte) (0)))), ((int) (((byte) (0)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgw_ranking.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgw_ranking.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgw_ranking.Location = new System.Drawing.Point(422, 128);
+            this.dgw_ranking.Name = "dgw_ranking";
+            this.dgw_ranking.RowHeadersVisible = false;
+            this.dgw_ranking.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgw_ranking.Size = new System.Drawing.Size(226, 282);
+            this.dgw_ranking.TabIndex = 25;
             // 
             // frmRankingMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Arkanoid.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(801, 479);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(973, 738);
+            this.Controls.Add(this.dgw_ranking);
+            this.Controls.Add(this.btm_gotomenu);
+            this.Controls.Add(this.lbl_rankingarkanoid);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmRankingMenu";
-            this.Text = "frmRankingMenu";
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ARKANOID";
+            ((System.ComponentModel.ISupportInitialize) (this.dgw_ranking)).EndInit();
             this.ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btm_gotomenu;
+        private System.Windows.Forms.Label lbl_rankingarkanoid;
+        private System.Windows.Forms.DataGridView dgw_ranking;
     }
 }
