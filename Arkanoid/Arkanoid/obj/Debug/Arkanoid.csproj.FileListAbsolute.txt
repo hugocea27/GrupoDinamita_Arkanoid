@@ -71,3 +71,4 @@ C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\bin\Debug\Syste
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.exe.config
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmRankingMenu.resources
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.csproj.CopyComplete
+C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmLogin.resources

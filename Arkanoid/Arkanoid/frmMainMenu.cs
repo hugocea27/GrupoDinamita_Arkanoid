@@ -12,7 +12,7 @@ namespace Arkanoid
 
         private void btmPlay_Click(object sender, EventArgs e)
         {
-            frmGame window = new frmGame();
+            frmLogin window = new frmLogin();
             window.Show();
             this.Hide();
         }

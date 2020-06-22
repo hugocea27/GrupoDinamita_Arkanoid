@@ -15,6 +15,9 @@
         <e p="frmGameOver.cs" t="Include" />
         <e p="frmGameOver.Designer.cs" t="Include" />
         <e p="frmGameOver.resx" t="Include" />
+        <e p="frmLogin.cs" t="Include" />
+        <e p="frmLogin.Designer.cs" t="Include" />
+        <e p="frmLogin.resx" t="Include" />
         <e p="frmMainMenu.cs" t="Include" />
         <e p="frmMainMenu.Designer.cs" t="Include" />
         <e p="frmMainMenu.resx" t="Include" />

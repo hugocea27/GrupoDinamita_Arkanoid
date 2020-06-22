@@ -122,7 +122,7 @@
     <value>Consolas, 27.75pt, style=Bold</value>
   </data>
   <data name="lbl_gameover.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 61</value>
+    <value>342, 115</value>
   </data>
   <data name="lbl_gameover.Size" type="System.Drawing.Size, System.Drawing">
     <value>374, 50</value>
@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbl_gameover.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>3</value>
   </data>
   <data name="lbl_finalscore.Font" type="System.Drawing.Font, System.Drawing">
     <value>Consolas, 27.75pt, style=Bold</value>
@@ -158,7 +158,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_finalscore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 111</value>
+    <value>342, 225</value>
   </data>
   <data name="lbl_finalscore.Size" type="System.Drawing.Size, System.Drawing">
     <value>374, 50</value>
@@ -179,103 +179,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbl_finalscore.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lbl_savename.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Consolas, 20.25pt, style=Bold</value>
-  </data>
-  <data name="lbl_savename.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_savename.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 249</value>
-  </data>
-  <data name="lbl_savename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 50</value>
-  </data>
-  <data name="lbl_savename.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lbl_savename.Text" xml:space="preserve">
-    <value>NOMBRE</value>
-  </data>
-  <data name="lbl_savename.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lbl_savename.Name" xml:space="preserve">
-    <value>lbl_savename</value>
-  </data>
-  <data name="&gt;&gt;lbl_savename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_savename.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbl_savename.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="txt_nickname.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Consolas, 18pt, style=Bold</value>
-  </data>
-  <data name="txt_nickname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 313</value>
-  </data>
-  <data name="txt_nickname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 36</value>
-  </data>
-  <data name="txt_nickname.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txt_nickname.Name" xml:space="preserve">
-    <value>txt_nickname</value>
-  </data>
-  <data name="&gt;&gt;txt_nickname.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_nickname.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_nickname.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btmSaveScore.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Consolas, 14.25pt, style=Bold</value>
-  </data>
-  <data name="btmSaveScore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>441, 447</value>
-  </data>
-  <data name="btmSaveScore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 72</value>
-  </data>
-  <data name="btmSaveScore.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btmSaveScore.Text" xml:space="preserve">
-    <value>GUARDAR</value>
-  </data>
-  <data name="&gt;&gt;btmSaveScore.Name" xml:space="preserve">
-    <value>btmSaveScore</value>
-  </data>
-  <data name="&gt;&gt;btmSaveScore.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btmSaveScore.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btmSaveScore.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="lbl_maxscore.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Consolas, 20.25pt, style=Bold</value>
+    <value>Consolas, 14.25pt, style=Bold</value>
   </data>
   <data name="lbl_maxscore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lbl_maxscore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 355</value>
+    <value>203, 370</value>
   </data>
   <data name="lbl_maxscore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 50</value>
+    <value>651, 50</value>
   </data>
   <data name="lbl_maxscore.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -302,7 +218,7 @@
     <value>NoControl</value>
   </data>
   <data name="btm_gotomenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>441, 545</value>
+    <value>446, 445</value>
   </data>
   <data name="btm_gotomenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 72</value>
@@ -311,7 +227,7 @@
     <value>8</value>
   </data>
   <data name="btm_gotomenu.Text" xml:space="preserve">
-    <value>IR AL MENÚ</value>
+    <value>VOLVER AL MENÚ</value>
   </data>
   <data name="&gt;&gt;btm_gotomenu.Name" xml:space="preserve">
     <value>btm_gotomenu</value>

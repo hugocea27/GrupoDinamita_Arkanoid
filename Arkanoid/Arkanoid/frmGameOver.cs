@@ -9,47 +9,29 @@ namespace Arkanoid
         {
             InitializeComponent();
             lbl_finalscore.Text = "Tu puntaje: "+ frmGame.score;
-
-            if (frmGame.score == 110)
-            {
-                lbl_maxscore.Text = "¡PUNTAJE MÁXIMO!";
-            }
+            updateScore();
         }
 
-        private void btmRanking_Click(object sender, EventArgs e)
+        private void updateScore()
         {
-            frmRankingMenu window = new frmRankingMenu();
-            window.Show();
-            this.Hide();
-        }
+            string query = $"select gamescore from gamerank where username = '{frmLogin.actualPlayer}'";
+            var dt = ConnectionDB.ExecuteQuery(query);
+            var dr = dt.Rows[0];
+            var bestScore = Convert.ToInt32(dr[0]);
 
-        private void btmSaveScore_Click(object sender, EventArgs e)
-        {
-            if (txt_nickname.Text == "")
+            if (bestScore < frmGame.score)
             {
-                MessageBox.Show("Debes ingresar un usuario.");
+                string nonQuery = $"UPDATE gamerank SET gamescore ={frmGame.score} WHERE username='{frmLogin.actualPlayer}'";
+                ConnectionDB.ExecuteNonQuery(nonQuery);
+                lbl_maxscore.Text = "¡NUEVO MEJOR PUNTAJE!";
             }
+
             else
             {
-                try
-                {
-                    string nonQuery = "INSERT INTO gamerank (username, gamescore) VALUES (" +
-                                      $"'{txt_nickname.Text}', " +
-                                      $"{frmGame.score})";
-
-                    ConnectionDB.ExecuteNonQuery(nonQuery);
-                    MessageBox.Show("Datos guardados exitosamente.");
-                    frmMainMenu menu = new frmMainMenu();
-                    menu.Show();
-                    this.Close();
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Ese nombre de usuario ya está en uso.");
-                }
+                lbl_maxscore.Text = "Mejor puntaje anterior anterior: "+ bestScore;
             }
         }
-
+        
         private void btm_gotomenu_Click(object sender, EventArgs e)
         {
             frmMainMenu window = new frmMainMenu();
