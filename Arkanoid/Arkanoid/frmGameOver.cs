@@ -9,6 +9,11 @@ namespace Arkanoid
         {
             InitializeComponent();
             lblFinalScore.Text = "Tu puntaje: "+ frmGame.score;
+
+            if (frmGame.score == 97)
+            {
+                lblMaxScore.Text = "PUNTAJE MÁXIMO";
+            }
         }
 
         private void btmRanking_Click(object sender, EventArgs e)

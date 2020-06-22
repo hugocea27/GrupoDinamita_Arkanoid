@@ -1307,7 +1307,7 @@ namespace Arkanoid
             this.ball.Image = global::Arkanoid.Properties.Resources.Ball;
             this.ball.Location = new System.Drawing.Point(472, 573);
             this.ball.Name = "ball";
-            this.ball.Size = new System.Drawing.Size(35, 35);
+            this.ball.Size = new System.Drawing.Size(23, 22);
             this.ball.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ball.TabIndex = 100;
             this.ball.TabStop = false;

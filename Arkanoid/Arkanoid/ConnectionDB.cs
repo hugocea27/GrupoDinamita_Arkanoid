@@ -6,12 +6,12 @@ namespace Arkanoid
     public static class ConnectionDB
     {
         private static string
-            host = "127.0.0.1",
+            host = "localhost",
             database = "ProyectoFinal",
             userID = "postgres",
             password = "uca";
 
-        private static string sConnection = $"Host={host};Port = 5432; User Id = {userID}; " +
+        private static string sConnection = $"Host={host};Port = 5434; User Id = {userID}; " +
                                             $"Password={password};Database={database};";
         
         public static DataTable ExecuteQuery(string query)

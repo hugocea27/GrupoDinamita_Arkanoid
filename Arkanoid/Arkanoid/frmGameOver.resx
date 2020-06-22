@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblScore2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lblFinalScore.Font" type="System.Drawing.Font, System.Drawing">
     <value>Consolas, 27.75pt, style=Bold</value>
@@ -179,7 +179,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblFinalScore.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="lblSaveName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Consolas, 20.25pt, style=Bold</value>
@@ -212,7 +212,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblSaveName.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>386, 313</value>
@@ -233,7 +233,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btmSaveScore.Font" type="System.Drawing.Font, System.Drawing">
     <value>Consolas, 14.25pt, style=Bold</value>
@@ -260,7 +260,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btmSaveScore.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btmRanking.Font" type="System.Drawing.Font, System.Drawing">
     <value>Consolas, 14.25pt, style=Bold</value>
@@ -290,6 +290,36 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btmRanking.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblMaxScore.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 20.25pt, style=Bold</value>
+  </data>
+  <data name="lblMaxScore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblMaxScore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 378</value>
+  </data>
+  <data name="lblMaxScore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 50</value>
+  </data>
+  <data name="lblMaxScore.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblMaxScore.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblMaxScore.Name" xml:space="preserve">
+    <value>lblMaxScore</value>
+  </data>
+  <data name="&gt;&gt;lblMaxScore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMaxScore.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblMaxScore.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

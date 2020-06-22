@@ -85,7 +85,7 @@ namespace Arkanoid
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(190, 82);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(590, 424);
+            this.dataGridView1.Size = new System.Drawing.Size(590, 423);
             this.dataGridView1.TabIndex = 22;
             // 
             // frmRanking

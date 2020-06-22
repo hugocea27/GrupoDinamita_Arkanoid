@@ -80,7 +80,7 @@ namespace Arkanoid
             this.button2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(424, 396);
+            this.button2.Location = new System.Drawing.Point(423, 396);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(317, 45);
             this.button2.TabIndex = 25;
@@ -93,7 +93,7 @@ namespace Arkanoid
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Arkanoid.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(802, 479);
+            this.ClientSize = new System.Drawing.Size(801, 479);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);

@@ -39,6 +39,7 @@ namespace Arkanoid
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btmSaveScore = new System.Windows.Forms.Button();
             this.btmRanking = new System.Windows.Forms.Button();
+            this.lblMaxScore = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblScore2
@@ -90,11 +91,20 @@ namespace Arkanoid
             this.btmRanking.UseVisualStyleBackColor = false;
             this.btmRanking.Click += new System.EventHandler(this.btmRanking_Click);
             // 
+            // lblMaxScore
+            // 
+            this.lblMaxScore.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lblMaxScore, "lblMaxScore");
+            this.lblMaxScore.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
+                ((int) (((byte) (0)))));
+            this.lblMaxScore.Name = "lblMaxScore";
+            // 
             // frmGameOver
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Arkanoid.Properties.Resources.background;
+            this.Controls.Add(this.lblMaxScore);
             this.Controls.Add(this.btmRanking);
             this.Controls.Add(this.btmSaveScore);
             this.Controls.Add(this.textBox1);
@@ -114,5 +124,6 @@ namespace Arkanoid
         private System.Windows.Forms.Button btmSaveScore;
         private System.Windows.Forms.Button btmRanking;
         private System.Windows.Forms.Label lblFinalScore;
+        private System.Windows.Forms.Label lblMaxScore;
     }
 }
