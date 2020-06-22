@@ -171,6 +171,9 @@
       <Content Include="Resources\btmRanking.png" />
       <Content Include="Resources\player.jpg" />
       <Content Include="Resources\pngfuel.png" />
+      <Content Include="Resources\Tile___blinded.png" />
+      <Content Include="Resources\Tile___blinded_broken.png" />
+      <Content Include="Resources\Tile___red.png" />
       <Content Include="Resources\title.png" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

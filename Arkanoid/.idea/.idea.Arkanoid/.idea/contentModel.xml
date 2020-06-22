@@ -42,6 +42,9 @@
           <e p="btmRanking.png" t="Include" />
           <e p="player.jpg" t="Include" />
           <e p="pngfuel.png" t="Include" />
+          <e p="Tile___blinded.png" t="Include" />
+          <e p="Tile___blinded_broken.png" t="Include" />
+          <e p="Tile___red.png" t="Include" />
           <e p="title.png" t="Include" />
         </e>
       </e>

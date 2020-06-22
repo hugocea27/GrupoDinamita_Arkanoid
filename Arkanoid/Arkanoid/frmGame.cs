@@ -73,8 +73,8 @@ namespace Arkanoid
                     if(ball.Bounds.IntersectsWith(x.Bounds)) { ballY = -ballY; }
                 }
 
-                //Colisión con bloque blanco (necesita 1 golpe)
-                if (x is PictureBox && x.Tag == "whiteblock")
+                //Colisión con bloque básico (necesita 1 golpe)
+                if (x is PictureBox && x.Tag == "basicblock")
                 {
                     if (ball.Bounds.IntersectsWith(x.Bounds))
                     {
@@ -84,25 +84,25 @@ namespace Arkanoid
                     }
                 }
                 
-                //Colisión con bloque rosa (necesita 2 golpes)
-                if (x is PictureBox && x.Tag == "pinkblock")
+                //Colisión con bloque roto (necesita 2 golpes)
+                if (x is PictureBox && x.Tag == "brokenblock")
                 {
                     if (ball.Bounds.IntersectsWith(x.Bounds))
                     {
                         ballY = -ballY;
-                        x.Tag = "whiteblock"; //lo convierte a blanco
-                        x.BackColor = Color.White;
+                        x.Tag = "basicblock"; 
+                        x.BackgroundImage = Properties.Resources.Tile___red;
                     }
                 }
                 
-                //Colisión con bloque rojo (necesita 3 golpes)
-                if (x is PictureBox && x.Tag == "redblock")
+                //Colisión con bloque blindado (necesita 3 golpes)
+                if (x is PictureBox && x.Tag == "blindedblock")
                 {
                     if (ball.Bounds.IntersectsWith(x.Bounds))
                     {
                         ballY = -ballY;
-                        x.Tag = "pinkblock"; //lo convierte a rosa
-                        x.BackColor = Color.Pink;
+                        x.Tag = "brokenblock"; 
+                        x.BackgroundImage = Properties.Resources.Tile___blinded_broken;
                     }
                 }
                 
@@ -123,7 +123,7 @@ namespace Arkanoid
                 }
                 
                 //si el jugador destruye todos los bloques
-                if (score == 97)
+                if (score == 110)
                 {
                     gameover();
                 }

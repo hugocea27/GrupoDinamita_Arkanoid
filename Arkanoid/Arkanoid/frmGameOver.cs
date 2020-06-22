@@ -10,9 +10,9 @@ namespace Arkanoid
             InitializeComponent();
             lblFinalScore.Text = "Tu puntaje: "+ frmGame.score;
 
-            if (frmGame.score == 97)
+            if (frmGame.score == 110)
             {
-                lblMaxScore.Text = "PUNTAJE MÁXIMO";
+                lblMaxScore.Text = "¡PUNTAJE MÁXIMO!";
             }
         }
 
