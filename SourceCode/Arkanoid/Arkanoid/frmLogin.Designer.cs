@@ -39,13 +39,13 @@ namespace Arkanoid
             // lbl_name
             // 
             this.lbl_name.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_name.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold,
+            this.lbl_name.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lbl_name.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
                 ((int) (((byte) (0)))));
-            this.lbl_name.Location = new System.Drawing.Point(314, 170);
+            this.lbl_name.Location = new System.Drawing.Point(291, 148);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(406, 61);
+            this.lbl_name.Size = new System.Drawing.Size(466, 86);
             this.lbl_name.TabIndex = 0;
             this.lbl_name.Text = "Ingresa tu nombre:";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

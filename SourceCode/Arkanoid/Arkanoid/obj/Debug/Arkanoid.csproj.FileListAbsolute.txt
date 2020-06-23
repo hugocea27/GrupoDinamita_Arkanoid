@@ -72,3 +72,40 @@ C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkan
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmRankingMenu.resources
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.csproj.CopyComplete
 C:\Users\Nvidia\Desktop\GrupoDinamita_Arkanoid\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmLogin.resources
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\Arkanoid.exe.config
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\Arkanoid.exe
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\Arkanoid.pdb
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\Npgsql.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Buffers.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Memory.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Text.Json.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Threading.Channels.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.ValueTuple.dll
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\Npgsql.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Buffers.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Memory.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Text.Json.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Threading.Channels.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\bin\Debug\System.ValueTuple.xml
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.csprojAssemblyReference.cache
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.exe.config
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmGame.resources
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmGameOver.resources
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmLogin.resources
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmMainMenu.resources
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.frmRankingMenu.resources
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.Properties.Resources.resources
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.csproj.GenerateResource.cache
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.csproj.CopyComplete
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.exe
+C:\Users\lenovo\Documents\Documentos X\GitHub\GrupoDinamita_Arkanoid\SourceCode\Arkanoid\Arkanoid\obj\Debug\Arkanoid.pdb

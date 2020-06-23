@@ -7,17 +7,20 @@ namespace Arkanoid
 {
     public partial class frmGame : Form
     {
+        #region atributes
         bool goToLeft, goToRight;
         int speed = 15, ballX = 10, ballY = 10, life=3;
         public static int score;
+        #endregion
 
         public frmGame()
         {
             InitializeComponent();
+            //inicializando la variable de puntaje
             score = 0;
         }
         
-        //evento de apretar tecla
+        #region presskeyEvent
         private void keyDown(object sender, KeyEventArgs e)
         {
             //Si se está presionando la tecla y el jugador no colisiona con la pared izquierda
@@ -31,14 +34,17 @@ namespace Arkanoid
                 goToRight = true;
             }
         } 
+        #endregion
 
-        //evento de soltar tecla
+        #region unpresskeyEvent
         private void keyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left) { goToLeft = false; }
             if (e.KeyCode == Keys.Right) { goToRight = false; }
         } 
+        #endregion
 
+        #region gameExecute
         private void timer1_Tick(object sender, EventArgs e)
         {
             //Vidas y puntaje
@@ -129,7 +135,9 @@ namespace Arkanoid
                 }
             }
         }
+        #endregion
 
+        #region gameOver
         private void gameover()
         {
             timer1.Stop();
@@ -137,7 +145,9 @@ namespace Arkanoid
             window.Show();
             this.Hide();
         }
+        #endregion
 
+        #region lostLife
         private void lostLife()
         {
             goToLeft = false; goToRight = false;
@@ -147,5 +157,6 @@ namespace Arkanoid
             pic_ball.Location = new Point(btm_player.Location.X + 30, btm_player.Location.Y - 50);
             timer1.Start();
         }
+        #endregion
     }
 }

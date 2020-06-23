@@ -74,8 +74,7 @@ namespace Arkanoid
             this.dgw_ranking.ColumnHeadersVisible = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int) (((byte) (0)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (0)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
@@ -83,7 +82,7 @@ namespace Arkanoid
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgw_ranking.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgw_ranking.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgw_ranking.Location = new System.Drawing.Point(422, 128);
+            this.dgw_ranking.Location = new System.Drawing.Point(409, 137);
             this.dgw_ranking.Name = "dgw_ranking";
             this.dgw_ranking.RowHeadersVisible = false;
             this.dgw_ranking.ScrollBars = System.Windows.Forms.ScrollBars.None;
