@@ -1,4 +1,4 @@
-# GrupoDinamita_Arkanoid
+# GrupoDinamita
 
 ## Integrantes
 
@@ -43,3 +43,6 @@ del juego y les comuniques tu inconveniente, recuerda que tu opinión nos ayuda a
 mejorando cada vez más y poder ofrecerte el mejor servicio.
 
 ## Trello
+
+A continuación se comparte el link de nuestro tablero en Trello.
+- https://trello.com/b/r9Ex1ZTp/arkanoidproject
