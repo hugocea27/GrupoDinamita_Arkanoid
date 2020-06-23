@@ -1,0 +1,7 @@
+CREATE TABLE GAMERANK(
+
+	username VARCHAR(50) PRIMARY KEY,
+
+	gameScore INT
+
+);
