@@ -1,15 +1,18 @@
 # GrupoDinamita_Arkanoid
 
-##Integrantes
+## Integrantes
+
 1. 00239219 Hugo Alejandro Cea Laínez
 2. 00005719 Hugo Aberto López Rivera 
 3. 00103719 Ricardo José Méndez López
 
-##IDE
+## IDE
+
 - JetBrains Rider: IDE para interfaz gráfica y funcionamiento del programa
 - PostgreSQL Tools: IDE para crear base de datos
 
-##FAQ's
+## FAQ's
+
 * ¿En qué consiste el juego?
 	> El juego consiste en que tu controlas una plataforma, la cual tiene como
 misión principal evitar que la bola caiga al vacío. Tu objetivo principal es hacer
@@ -39,4 +42,4 @@ el puntaje mayor, no hay manera de que éste sea menor.
 del juego y les comuniques tu inconveniente, recuerda que tu opinión nos ayuda a seguir 
 mejorando cada vez más y poder ofrecerte el mejor servicio.
 
-##Trello
+## Trello
